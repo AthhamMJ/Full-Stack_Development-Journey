@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>listable.com</title>
+    <style>
+        body{
+            background-color: black;
+            color:azure
+        }
+        .para{
+            color: bisque;
+            font-family: poppins;
+            font-size: large;
+            padding: 10px;
+            text-transform: capitalize;
+        }
+        em.italic{
+            font-family: cursive;
+        }
+        ul {
+            list-style: none;
+            padding: 10px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 30px;
+            margin: 10px;
+        }
+
+        li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 2px;
+
+            width: 30px;      /* Bullet size */
+            height: 30px;
+
+            background-image: url("opil.jpg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        table, td, tr{
+            border: 2px solid rgb(243, 255, 231);
+            padding: 15px;
+            outline: none;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.06);
+            border-color: rgbs(255, 255, 255, 255, 0.3);
+        }
+        tr:nth-child(1){
+            background-color: rgb(116, 116, 116);
+        }
+        td{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <p class="para">These list and table are absolutly perfect made <em class="italic"> bull shits</em>. I always used to say that i hate the empty shits</p>
+    <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul><br>
+    <div class="table">
+    <table style="height: 200px; width: 200px; background-image: url(opil.jpg);">
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>A</td>
+            <td>B</td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>

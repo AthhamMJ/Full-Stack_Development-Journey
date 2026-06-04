@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <head>
+            <title>title.com</title>
+            <style>
+                form{
+                    color: rgb(56, 48, 43);
+                }
+                body{
+                    background-color: rgb(255, 255, 255);
+                }
+            </style>
+        </head>
+        <body>
+            <form>
+                <fieldset>
+                <legend>Form</legend>
+                    
+                    <label for="uid"></label>
+                    Name:<input type="text" name="uid" placeholder="user_ID"><br><br>
+                    <label for="email"></label>
+                    Email:<input type="email" name="E-mail" placeholder="e-mail">
+                    <label for="password"></label>
+                    Password:<input type="password" name="pwd" placeholder="password"><br><br>
+                    
+                    <label for="gender"></label>
+                    Gender: <br>
+                        Male<input type="radio" name="gender" value="male">
+                        Female<input type="radio" name="gender" value="female"><br>
+                    
+                    <p>Select The Platforms</p>
+                    <input type="checkbox" name="Reading" id="Reading">Reading<br>
+                    <input type="checkbox" name="Racing">Racing<br>
+                    <input type="checkbox" name="Gaming">Gaming<br>
+                    <input type="checkbox" name="art">Art<br>
+                    <p></p>
+                    <label for="city">City</label>
+                    <select id="city" name="city">
+                        <option value="kattankudy">kattankudy</option>
+                        <option value="batticaloa">batticaloa</option>
+                        <option value="kalminai">kalminai</option>
+                        <option value="colombo">colombo</option>
+                    </select><br><br>
+
+                    <label for="Message"></label>
+                    Message:<br><textarea cols="20" rows="3" name="Message" placeholder="tell us cout you..."></textarea><br><br>
+                <input type="submit" name="submit" value="submit">
+                </fieldset>
+            </form>
+        </body>
+    </head>
+</html>
