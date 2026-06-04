@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blockelements</title>
     <style>
+        body{
+            background-color: black;
+            color: azure;
+        }
         .block{
             background-color: blue;
             color: aliceblue;
@@ -15,7 +19,46 @@
             background-color: blueviolet;
             width: 150px;
             height: 50px;
+            display: inline;
         }
+        .inline-block{
+            background-color: rgb(160, 19, 0);
+            color: antiquewhite;
+            margin: 20px;
+            height: 120px;
+            width: 350px;
+            display: inline-block;
+        }
+        .glass{
+            padding: 15px;
+            margin: 15px;
+            width: fit-content;
+            height: max-content;
+            background-color: transparent;
+            border-color: 1px solid rgba(255, 255, 255, 255, 0.5);
+            outline: none;
+
+            backdrop-filter:blur(28px);
+            -webkit-backdrop-filter:blur(28px)
+        }
+        .none{
+            display: none;
+        }
+        .flex{
+            display: flex;
+            gap: 20px;
+        
+        .flex-item1{
+            flex: 1;
+        }
+        .flex-item2{
+            flex: 3;
+        }
+        .flex-item3{
+            flex: 2;
+        }
+        
+}
     </style>
 </head>
 <body>
@@ -25,5 +68,21 @@
 
     <span class="inline">Max</span>
     <span class="inline">Charles</span>
+
+    <div>
+        <span class="inline-block">Max</span>
+        <span class="inline-block">Charles</span>
+        <span class="inline-block">Hamilton</span>
+        <span class="inline-block">Piasrti</span>
+    </div>
+    <p>chaou leclerc is the french language</p>
+    <p class="none">chaou leclerc is the mogousquen language</p>
+    <p>chaou leclerc is the spain language</p>
+    
+    <div class="flex">
+        <div class="flex-item1">Max Verstappen</div>
+        <div class="flex-item2">Max Verstappen</div>
+        <div class="flex-item3">Max Verstappen</div>
+    </div>
 </body>
 </html>

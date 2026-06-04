@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexgame.com</title>
+    <style>
+        body{
+            margin: 10px;
+        }
+        .flex{
+            display: flex;
+            height: 100px;
+            width: 1030px;
+            gap: 10px;
+            background-color: crimson;
+
+        .flex-right{
+            height: 400px;
+            width: 600px;
+            flex: 2;
+            background-color: crimson;
+        }
+        .flex-item3{
+            height: 400px;
+            width: 600px;
+            flex: 3;
+            background-color: crimson;
+        }
+        
+}
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div class="flex"></div>
+        <div>
+            <div class="flex-item2"></div>
+            <div class="flex-item3"></div>
+        </div>
+        <div class="flex"></div>
+    </div>
+</body>
+</html>
