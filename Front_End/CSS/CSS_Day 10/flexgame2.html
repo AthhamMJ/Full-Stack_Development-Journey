@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex2.com</title>
+    <style>
+        .container{
+            width: 1035px;
+        }
+        .row1{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .row3{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .flex1-row1{
+            flex: 2;
+            background-color: crimson;
+            height: 100px;
+
+        }
+        .flex2-row1{
+            flex: 1;
+            background-color: crimson;
+            height: 100px;
+        }
+        .row2{
+            display: flex;
+            gap: 10px;
+        }
+        .flex1-row2{
+            height: 210px;
+            display: block;
+            flex: 1;
+            background-color: gold;
+        }
+        .flex2-row2{
+            height: 200px;
+            flex: 1;
+        }
+            .flex2-row2-col1{
+                height: 100px;
+                background-color: purple;
+                margin-bottom: 10px;
+            }
+            .flex2-row2-col2{
+                
+                height: 100px;
+                margin-bottom: 10px;
+                background-color: purple;
+            }
+        .flex1-row3{
+            height: 100px;
+            background-color: blue;
+            flex: 1;
+        }
+
+        .flex2-row3{
+            height: 100px;
+            background-color: blue;
+            flex: 1;
+        }
+        .flex3-row3{
+            height: 100px;
+            background-color: blue;
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row1">
+            <div class="flex1-row1"></div>
+            <div class="flex2-row1"></div>
+        </div>
+
+        <div class="row2">
+            <div class="flex1-row2"></div>
+            <div class="flex2-row2">
+                <div class="flex2-row2-col1"></div>
+                <div class="flex2-row2-col2"></div>
+            </div>
+        </div>
+
+        <div class="row3">
+            <div class="flex1-row3"></div>
+            <div class="flex2-row3"></div>
+            <div class="flex3-row3"></div>
+        </div>
+    </div><br>
+    <div class="container">
+        <div class="row1">
+            <div class="flex1-row1"></div>
+            <div class="flex2-row1"></div>
+        </div>
+
+        <div class="row2">
+            <div class="flex1-row2"></div>
+            <div class="flex2-row2">
+                <div class="flex2-row2-col1"></div>
+                <div class="flex2-row2-col2"></div>
+            </div>
+        </div>
+
+        <div class="row3">
+            <div class="flex1-row3"></div>
+            <div class="flex2-row3"></div>
+            <div class="flex3-row3"></div>
+        </div>
+    </div>
+
+</body>
+</html>
