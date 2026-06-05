@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset class="bg" style="margin: 18px;">
+    <div>
+        <fieldset class="blue-background" style="width: auto;">
+        <h4 class="heading" style="color: aliceblue;">STUDENT PROFILE</h4>
+        <img src="icon.png" alt="Bla" width="100px" height="100px"><br>
+        <l style="color: aliceblue;">Name : Athham</l><br>
+        <l style="color: aliceblue;">course: Full-stack Development</l><br>
+        <l style="color: aliceblue;">e-mail: athham.uki@dreamspace.acedamy</l><br>
+        </fieldset>
+    </div>
+
+    <p class="sub-heading">About Me</p>
+    <p>I am a passionate student interested in web development and modern technologies. I enjoy learnig new languages and building creative projects</p>
+    <p class="normal-heading">Technical Skills</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+    <p class="normal-heading">Learnig Path</p>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ol>
+
+    <p class="normal-heading">Technologies</p>
+    <dl>
+        <dh class="normal-heading">HTML</dh>
+            <dd>Structure of Web Pages</dd>
+        <dh class="normal-heading">CSS</dh>
+            <dd>Styling Web Pages</dd>
+        <dh class="normal-heading">JavaScript</dh>
+            <dd>Adds Interactivity</dd>
+    </dl>
+
+    <p class="sub-heading">Acedemic Records</p>
+    <table>
+        <tr>
+            <th>Subject</th>
+            <th>Marks</th>
+            <th>Grade</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>85</td>
+            <td>A</td>
+        <tr>
+            <td>CSS</td>
+            <td>80</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>75</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>DataBase</td>
+            <td>78</td>
+            <td>B+</td>
+        </tr>
+    </table>
+    <p class="sub-heading">Student Registration Form</p>
+    <fieldset class="normal-heading">
+        <label for="name">Full Name: </label><br>
+        <input type="text" name="name" id="name"><br><br>
+        <label for="email">Email: </label><br>
+        <input type="email" name="email" id="email"><br><br>
+        <label for="number">Phone Number: </label><br>
+        <input type="number" name="number" id="number"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="male" id="gender">Male<br>
+        <input type="radio" name="female" id="gender">Female<br><br>
+        
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" id="html">HTML
+        <input type="checkbox" id="css">CSS
+        <input type="checkbox" id="js">JavaScript<br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date"><br><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="usa">United States Of America</option>
+            <option value="uk">united Kingdom</option>
+            <option value="uae">United Arab Emirates</option>
+            <option value="sl">Sri Lanka</option>
+            <option value="ind">India</option>
+        </select><br><br>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="msg" cols="20" rows="5"></textarea><br><br>
+
+        <input type="submit" name="submit" vlaue="reset" id="submit">
+        <input type="reset" name="reset" value="reset" id="submit">
+
+    </fieldset><br><br>
+    <footer style="background-color: rgb(50, 132, 255);color: aliceblue; height: 50px">
+        <center>All Rights Reserved for starkindustries.pvt.ltd</center>
+    </footer>
+
+    <center><h2 class="heading">HTML Tables and Forms Assignment</h2></center>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Maths</th>
+            <th>Science</th>
+            <th>English</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>85</td>
+            <td>90</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>Mary</td>
+            <td>92</td>
+            <td>87</td>
+            <td>95</td>
+        </tr>
+    </table><br>
+    <table>
+        <tr>
+            <th>Day</th>
+            <th>9.00 - 10.00</th>
+            <th>10.00 - 11.00</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td colspan="2">Web Development</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>HTML</td>
+            <td>CSS</td>
+        </tr>
+    </table><br>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Role</th>
+        </tr>
+        <tr>
+            <td rowspan="2">John</td>
+            <td>IT</td>
+            <td>Developer</td>
+        </tr>
+        <tr>
+            <td>IT</td>
+            <td>Developer</td>
+        </tr>
+    </table><br>
+    <fieldset>
+        <form action="bla.php" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" name="name" id="name"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password"><br><br>
+            <input type="submit" value="Register" name="register">
+        </form>
+    </fieldset><br>
+    <fieldset>
+        <form>
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="male" id="gender">Male<br>
+        <input type="radio" name="female" id="gender">Female<br><br>
+        
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" id="html">HTML
+        <input type="checkbox" id="css">CSS
+        <input type="checkbox" id="js">JavaScript<br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date"><br><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="usa">Sri Lanka</option>
+            <option value="uk">united Kingdom</option>
+            <option value="uae">United Arab Emirates</option>
+            <option value="sl">United States Of America</option>
+            <option value="ind">India</option>
+        </select><br><br>
+        <input type="submit" name="submit">
+        </form>
+    </fieldset><br>
+    <fieldset>
+        <form>
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password"><br><br>
+
+        <label for="gender">Gender:</label><br>
+        <input type="radio" name="male" id="gender">Male<br>
+        <input type="radio" name="female" id="gender">Female<br><br>
+        
+        <label for="skills">Skills:</label><br>
+        <input type="checkbox" id="html">HTML
+        <input type="checkbox" id="css">CSS
+        <input type="checkbox" id="js">JavaScript<br><br>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+            <option value="usa">Sri Lanka</option>
+            <option value="uk">united Kingdom</option>
+            <option value="uae">United Arab Emirates</option>
+            <option value="sl">United States Of America</option>
+            <option value="ind">India</option>
+        </select><br><br>
+
+        <label for="message">About Yourself;</label>
+        <textarea name="message" id="msg" cols="20" rows="5"></textarea><br><br>
+
+        <input type="submit" value="Apply" name="Apply">
+        </form>
+    </fieldset>
+</fieldset>
+</body>
+</html> 
