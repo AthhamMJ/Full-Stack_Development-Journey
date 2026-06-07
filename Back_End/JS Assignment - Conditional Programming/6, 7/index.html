@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopkeeper.com</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="glass">
+    <label for="snum">Number Of Students: </label>
+    <input type="text" name="snum" id="snum"><br><br>
+    <label for="gnum">Number Of Groups: &nbsp;&nbsp;</label>
+    <input type="text" name="gnum" id="gnum"><br><br>
+    <button onclick="compare()">Calculate</button><br>
+    
+    <h3 id="result"></h3>
+    </div>
+    <script>
+    function compare(){
+    let snum = Number(document.getElementById("snum").value);
+    let gnum = Number(document.getElementById("gnum").value);
+
+    let group = snum / gnum;
+    let balance = snum % gnum;
+
+    document.getElementById("result").innerText = "Teacher, One Groups Should Be With " + group +" students. " + balance + " Are Balacne";
+}
+    </script>
+</body>
+</html>
