@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex1.com</title>
+</head>
+<style>
+    body{
+        padding: 20px;
+        margin: 50px;
+        color: rgb(59, 59, 59);
+        background-color: rgb(59, 59, 59);
+        font-family: poppins;
+    }
+    div{
+        text-align: center;
+    }
+    span{
+        font-size: medium;
+    }
+    .container{
+        width: 900px;
+    }
+    .row1{
+        background-color: cornflowerblue;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    .row2{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+        .r2-f1{
+            flex: 3;
+            gap: 10px;
+            background-color: aquamarine;
+            display: block;
+            height: 200px;
+        }
+        .r2-f2{
+            flex: 4;
+            gap: 10px;
+            display: flex;
+            height: 200px;
+            flex-direction: column;
+
+        }
+            .r2-f2-c1{
+                background-color: blue;
+                /* height: 200px; */
+                flex: 1;
+            }
+            .r2-f2-c2{
+                /* height: 200px; */
+                display:flex;
+                gap: 10px;
+                flex: 1;
+            }
+                .r2-f2-c2-c1{
+                background-color: blue;
+                /* height: 100px; */
+                flex: 1;
+                }
+                .r2-f2-c2-c2{
+                background-color: blue;
+                /* height: 100px; */
+                flex: 1;
+                }
+    .row4{
+        background-color: cadetblue;
+        height: 100px;
+    }
+    p{
+        text-align: center;
+        font-size: small;
+    }
+</style>
+<body>
+    <center>
+    <div class="container">
+        <div class="row1"><span><center><br>Header</center></span></div>
+        <div class="row2">
+            <div class="r2-f1">
+                <div class="r2-f1-c2"><span><br><br><br><br>Side Bar</span></div>
+            </div>    
+            <div class="r2-f2">
+                <div class="r2-f2-c1"><span><br>Content-1</span></div>
+                <div class="r2-f2-c2">
+                    <div class="r2-f2-c2-c1"><br>Contend-2</div>
+                    <div class="r2-f2-c2-c2"><br>Contend-3</div>
+                </div>
+            </div>
+        </div>
+        <div class="row4" style="align-items: center;"><span><br><center>Footer</center></span></div>
+    </div>
+    </center>
+</body>
+</html>

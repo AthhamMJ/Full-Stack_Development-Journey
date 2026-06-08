@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex1.com</title>
+</head>
+<style>
+    body{
+        padding: 20px;
+        margin: 50px;
+        color: aliceblue;
+        font-family: poppins;
+    }
+    div{
+        text-align: center;
+    }
+    span{
+        font-size: larger;
+    }
+    .container{
+        width: 600px;
+    }
+    .row1{
+        background-color: skyblue;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    .row2{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+        .r2-f1{
+            flex: 3;
+            gap: 10px;
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+        }
+            .r2-f1-c1{
+                background-color: fuchsia;
+                /* height: 100px; */
+                flex: 2;
+            }
+            .r2-f1-c2{
+                background-color: rgb(73, 217, 102);
+                /* height: 100px; */
+                flex: 3;
+            }
+        .r2-f2{
+            flex: 4;
+            gap: 10px;
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+
+        }
+            .r2-f2-c1{
+                background-color: rgb(255, 196, 0);
+                /* height: 100px; */
+                flex: 5;
+            }
+            .r2-f2-c2{
+                background-color: rgb(136, 136, 136);
+                /* height: 100px; */
+                flex: 2;
+            }
+    .row3{
+        display: flex;
+        gap: 10px;
+        margin-bottom: 10px;
+        height: 150px;
+    }
+        .r3-f1{
+            flex: 5;
+            background-color: rgb(2, 109, 2);
+        }
+        .r3-f2{
+            flex: 2;
+            background-color: rgb(203, 121, 209);
+        }
+    .row4{
+        background-color: chocolate;
+        height: 100px;
+    }
+    p{
+        text-align: center;
+        font-size: small;
+    }
+</style>
+<body>
+    <center>
+    <div class="container">
+        <div class="row1"><span><center>Header</center></span></div>
+        <div class="row2">
+            <div class="r2-f1">
+                <div class="r2-f1-c1"><span>Hero</span></div>
+                <div class="r2-f1-c2"><span>Side Bar</span></div>
+            </div>    
+            <div class="r2-f2">
+                <div class="r2-f2-c1"><span>Main Contend</span><p>Unfortunatly, I can't See whats in the image. but you can place the...</p></div>
+                <div class="r2-f2-c2"><span>Extra Contend</span></div>
+            </div>
+        </div>
+        <div class="row3">
+            <div class="r3-f1"><span>Related Image</span></div>
+            <div class="r3-f2"><span style="text-align: center;">Related<br>Posts</span></div>
+        </div>
+        <div class="row4" style="align-items: center;"><span><center>Footer</center></span></div>
+    </div>
+    </center>
+</body>
+</html>
