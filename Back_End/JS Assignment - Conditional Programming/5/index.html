@@ -8,22 +8,22 @@
 </head>
 <body>
     <div class="glass">
-    <label for="col">Column item: </label>
-    <input type="text" name="col" id="col"><br><br>
-    <label for="row">Row item: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-    <input type="text" name="row" id="row"><br><br>
+    <label for="paid">Paid Ammount: </label>
+    <input type="text" name="pa" id="pa"><br><br>
+    <label for="cost">Cost Ammount: </label>
+    <input type="text" name="ca" id="ca"><br><br>
     <button onclick="compare()">Calculate</button><br>
     
     <h3 id="result"></h3>
     </div>
     <script>
     function compare(){
-    let c = Number(document.getElementById("col").value);
-    let r = Number(document.getElementById("row").value);
+    let c = Number(document.getElementById("ca").value);
+    let p = Number(document.getElementById("pa").value);
 
-    let t = c * r;
+    let d = c - p;
 
-    document.getElementById("result").innerText = "The Toatal Items are: " + t;
+    document.getElementById("result").innerText = "The Difference is: " + d;
 }
     </script>
 </body>

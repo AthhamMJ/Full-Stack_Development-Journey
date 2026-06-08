@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>farmer.com</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="glass">
+    <label for="radius">Radius of Circle: </label>
+    <input type="text" name="radius" id="radius"><br><br>
+    <button onclick="cube()">Calculate</button><br>
+    
+    <h3 id="result"></h3>
+    </div>
+    <script>
+    function cube(){
+    let radius = Number(document.getElementById("radius").value);
+    let area = Math.PI * radius * radius;
+
+    document.getElementById("result").innerText = "The Area Of Circle is: " + area + " units square";
+}
+    </script>
+</body>
+</html>
