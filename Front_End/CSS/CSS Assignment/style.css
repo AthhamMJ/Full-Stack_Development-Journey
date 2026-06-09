@@ -7,10 +7,9 @@
 }
 .blue-background{
     background-color: rgb(50, 132, 255);
+    color: rgb(0, 0, 0);
     font-family: sans-serif;
     font-size: small;
-    outline: none;
-    border: none;
 }
 .sub-heading{
     font-family: sans-serif;
@@ -45,9 +44,9 @@ table{
     height: auto;
 }
 body{
-    background-image: url(uki.pnge);
     margin: 50px;
     padding: 50px;
+    background-color: black;
 }
 form{
     font-family: sans-serif;
@@ -60,10 +59,36 @@ fieldset.bg{
 }
 fieldset{
     width: max-content;
+    border-radius: 18px;
+    background-color: antiquewhite;
+    outline: none;
+    color: black;
+
 }
 footer {
     background-color: #333;   /* Dark background */
     color: white;             /* White text */
     padding: 10px;
     text-align: center;       /* Default: center alignment */
+}
+input{
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+.glass{
+            border: 1px solid rgb(135, 135, 135 ,0.35);
+
+            box-shadow:
+            inset 0 2px 2px rgba(255,255,255,0.5),
+            inset 0 -2px 2px rgba(150, 150, 150, 0.1);
+            
+            border-radius: 28px 28px 28px 28px;
+            
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+
+            padding: 20px;
+            margin: 20px;
+            background: rgba(255, 255, 255, 0.1);
 }

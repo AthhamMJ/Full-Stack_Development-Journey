@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="glass">
     <fieldset class="bg" style="margin: 18px;">
     <div>
-        <fieldset class="blue-background" style="width: auto;">
+        <fieldset class="blue-background, glass" style="width: auto;">
         <h4 class="heading" style="color: aliceblue;">STUDENT PROFILE</h4>
         <img src="icon.png" alt="Bla" width="100px" height="100px"><br>
         <l style="color: aliceblue;">Name : Athham</l><br>
@@ -74,7 +75,7 @@
         </tr>
     </table>
     <p class="sub-heading">Student Registration Form</p>
-    <fieldset class="normal-heading">
+    <fieldset class="normal-heading, glass">
         <label for="name">Full Name: </label><br>
         <input type="text" name="name" id="name"><br><br>
         <label for="email">Email: </label><br>
@@ -167,7 +168,7 @@
             <td>Developer</td>
         </tr>
     </table><br>
-    <fieldset>
+    <fieldset class="glass">
         <form action="bla.php" method="post">
             <label for="name">Full Name:</label><br>
             <input type="text" name="name" id="name"><br><br>
@@ -178,7 +179,7 @@
             <input type="submit" value="Register" name="register">
         </form>
     </fieldset><br>
-    <fieldset>
+    <fieldset class="glass">
         <form>
         <label for="gender">Gender:</label><br>
         <input type="radio" name="male" id="gender">Male<br>
@@ -203,7 +204,7 @@
         <input type="submit" name="submit">
         </form>
     </fieldset><br>
-    <fieldset>
+    <fieldset class="glass">
         <form>
         <label for="name">Name:</label><br>
         <input type="text" name="name" id="name"><br><br>
@@ -239,5 +240,6 @@
         </form>
     </fieldset>
 </fieldset>
+</div>
 </body>
 </html> 
