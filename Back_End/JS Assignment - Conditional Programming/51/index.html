@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bonus.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="glass">
+        <label for="total">Current Working years:</label>
+        <input type="text" name="year" id="year"><br><br>
+
+        <button onclick="bonus()">Calculate</button><br>
+
+        <h3 id="result"></h3>
+    </div>
+
+    <script>
+    function bonus() {
+
+        let year = Number(document.getElementById("year").value);
+
+        let salary;
+        let bonus;
+
+        if (year >= 5) {
+            salary = 10000;
+            bonus = salary * 0.25 * 12;
+        }
+        else if (year >= 4) {
+            salary = 7000;
+            bonus = salary * 0.15 * 12;
+        }
+        else if (year >= 3) {
+            salary = 5000;
+            bonus = salary * 0.10 * 12;
+        }
+        else {
+            salary = 15000;
+            bonus = salary * 0.55 * 12;
+        }
+
+        document.getElementById("result").innerText = `Current Salary: $${salary} Bonus Amount: $${bonus}`;
+
+    }
+    </script>
+
+</body>
+</html>
