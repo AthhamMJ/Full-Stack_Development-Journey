@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexalign.com</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .container1, .container2, .container3, .container4{
+            width: 900px;
+            height: 300px;
+            display: flex;
+            background: rgba(255,255,255,0.06);
+            border: 3px solid rgba(255,255,255,0.35);
+            border-radius: 28px;
+            padding: 20px;
+            margin-bottom: 16px;
+            cursor: pointer;
+            backdrop-filter: blur(28px);
+            -webkit-backdrop-filter: blur(28px);
+
+            box-shadow:
+            inset 0 2px px rgba(255,255,255,0.5),
+            inset 0 -2px 2px rgba(135, 135, 135, 0.1);
+            }
+        .container1{
+            align-items: center;
+        }
+        .container2{
+            justify-content: center;
+        }
+        .container3{
+            flex-wrap: wrap;
+        }
+        .container4{
+            flex-direction: column-reverse;
+        }    
+        .flex1{
+                background-color: red;
+                height: 100px;
+                width: 100px;
+                
+        }
+        .flex2{
+                background-color: green;
+                height: 100px;
+                width: 100px;
+                
+        }
+        .flex3{
+                background-color: blue;
+                height: 100px;
+                width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+    </div>
+     <div class="container2">
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+    </div>
+     <div class="container3">
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+    </div>
+     <div class="container4">
+        <div class="flex1">1</div>
+        <div class="flex2">2</div>
+        <div class="flex3">3</div>
+    </div>
+</body>
+</html>
