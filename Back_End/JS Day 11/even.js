@@ -9,7 +9,6 @@
 function even(number){
     let x = 0;
     let n = number;
-    if (n > 0){
         do{
             if (x % 2 == 0){
                 console.log(x)
@@ -20,6 +19,5 @@ function even(number){
             }
         }
         while(x <= n);
-    }
 }
 even(110021);
