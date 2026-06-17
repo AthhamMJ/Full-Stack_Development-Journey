@@ -1,11 +1,17 @@
 function fact(number){
-    let i = number;
+    let n = number;
     let factorial = 1;
     do{
-      factorial*=i;
-      i--;  
+      if(n % 2 == 0){
+        factorial += n;
+        n--;
+      }
+      else{
+        n--;
+      }
     }
-    while(i > 0 );
-    console.log("The Factorial of "+ i + " is "+ factorial);
+    while(n > 0){
+        console.log(factorial)
+    }
 }
-fact(10);
+fact(100);
