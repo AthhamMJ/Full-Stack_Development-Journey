@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heat.com</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="glass">
+    <label for="c">Enter The Heat (Celcius): </label>
+    <input type="text" name="c" id="c"><br><br>
+    <button onclick="cube()">Calculate</button><br>
+    
+    <h3 id="result"></h3>
+    </div>
+    <script>
+    function cube(){
+    let c = Number(document.getElementById("c").value);
+    let f = 9 * c / 5 + 32;
+
+    document.getElementById("result").innerText = "The Heat is : " + f + " Fahrenheit.";
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopkeeper.com</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="glass">
+    <label for="paid">Paid Ammount: </label>
+    <input type="text" name="pa" id="pa"><br><br>
+    <label for="cost">Cost Ammount: </label>
+    <input type="text" name="ca" id="ca"><br><br>
+    <button onclick="compare()">Calculate</button><br>
+    
+    <h3 id="result"></h3>
+    </div>
+    <script>
+    function compare(){
+    let c = Number(document.getElementById("ca").value);
+    let p = Number(document.getElementById("pa").value);
+
+    let d = c - p;
+
+    document.getElementById("result").innerText = "The Difference is: " + d;
+}
+    </script>
+</body>
+</html>

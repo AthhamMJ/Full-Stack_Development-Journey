@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wheel.com</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <div class="glass">
+    <label for="radius">Radius of Tyre: </label>
+    <input type="text" name="radius" id="radius"><br><br>
+    <button onclick="cube()">Calculate</button><br>
+    
+    <h3 id="result"></h3>
+    </div>
+    <script>
+    function cube(){
+    let radius = Number(document.getElementById("radius").value);
+    let circ = 2 * Math.PI * radius;
+
+    document.getElementById("result").innerText = "The Circumface Of Circle is: " + circ + " units";
+}
+    </script>
+</body>
+</html>
