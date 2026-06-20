@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assesment.com</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        font-family: Arial;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+    .flex1{
+        display: flex;
+        flex-direction: column;
+        padding: 200px 300px;
+        background-image: url(home.avif);
+        background-size: cover;
+        height: 280px;
+        border-radius: 0px 0px 40px 40px;
+    }
+    .article-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 230px;
+    }
+    .flex2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .flex3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 5px;
+    }
+    .flex4{
+        display: flex;
+        background-color: black;
+        border-radius: 28px;
+        color: aliceblue;
+        height: 300px;
+    }
+    .flex5{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        align-items: center;
+        color: aliceblue;
+    }
+    a{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: small;
+    }
+    .button-subscribe{
+        height: 30px;
+        width: 100px;
+        background-color: aliceblue;
+        font-size: small;
+        border-radius: 28px;
+        border: none;
+        outline: none;
+    }
+    .button-adventure{
+        width: 100px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        color: rgb(255, 255, 255);
+        border-radius: 28px;
+
+    }
+    .button-browse{
+        width: 130px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        color: black;
+        border-radius: 28px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        position: absolute;
+        top: 300px;
+        left: 150px;
+
+        font-family: Arial;
+        color: aliceblue; 
+    }
+    .container-flex{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 200px;
+        gap: 50px;
+    }    
+    p{
+        font-size: small;
+        color: aliceblue;
+        text-align: justify;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h4{
+        color: rgb(0, 0, 0);
+    }
+    h2{
+        color: aliceblue;
+    }
+    .box1, .box2, .box3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+        height: 300px;
+        border-radius: 28px;
+        position: relative;
+        background-size: cover;
+    }
+    .box1{
+        background-image: url(img1.avif);
+    }
+    .box2{
+        background-image: url(img2.jpg);
+    }
+    .box3{
+        background-image: url(img3.jpeg);
+    }
+    .box-text, .box-head{
+        color: rgb(255, 255, 255);
+        position: absolute;
+        margin: 10px
+    }
+    .box-text{
+        font-family: Arial;
+        font-size: small;
+        bottom: 20px;
+    }
+    .box-head{
+        font-family: Arial;
+        bottom: 80px;
+    }
+    .black-text{
+        font-family: poppins;
+        color: black;
+        text-align: justify;
+        font-weight: bold;
+    }
+    .hr{
+        background-color: rgba(255, 255, 255, 0.5) solid black;
+        width: 800px;
+        text-align: center;
+    }
+    
+    .flex4-image{
+        flex: 1;
+        background-image: url(img4.jpeg);
+        border-radius: 28px;
+        background-size: cover;
+        padding: 30px;
+        margin: 10px;
+        border-color:solid 4px rgb(134, 134, 134);
+    }
+    .flex4-content{
+        display: flex;
+        flex: 2;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .flex5-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        background-image: url(img6.jpg);
+        height: 300px;
+        border-radius: 28px;
+        background-size: cover;
+        align-content: flex-end;
+        position: relative;
+    }
+    .flex5-image-text{
+        text-align: center;
+        font-size: small;
+        padding: 5px;
+        font-family: sans-serif;
+        color:aliceblue;
+        background-color: rgba(255, 255, 255, 0.20);
+        border-radius: 28px;
+        height: 40px;
+        width: 300px;
+        backdrop-filter: blur(28px);
+        -webkit-backdrop-filter: blur(28px);
+        position: absolute;
+        bottom: 17px;
+    }
+    .flex5-content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .logo-row{
+        display: flex;
+    }
+    input{
+        height: 25px;
+        width: 220px;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .icons{
+        display: flex;
+        gap: 10px;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border-radius: 25px;
+        width: 35px;
+        height: 35px;
+        border:1px solid black;
+    }
+    hr.left-align{
+        margin-left: 0;       /* Remove left auto margin */
+        margin-right: auto;   /* Keep right margin flexible */
+        width: 120px;         /* Set a fixed width */
+        border: none;         /* Remove default border */
+        border-top: 2px solid #333; /* Custom line style */
+    }
+    .flex6{
+        display: flex;
+        gap: 10px;
+    }
+    .flex6-image1, .flex6-image2{
+        width: 320px;
+        height: 300px;
+        justify-content: center;
+        background-image: url(img4.jpeg);
+        background-size: cover;
+        border-radius: 28px;
+    }
+    .flex6-image2{
+        background-image: url(img5.avif);
+    }
+</style>
+<body>
+    <div class="flex1">
+        <nav class="flex">
+            <h4 style="color: aliceblue;">Journal X</h4>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Pages</a>
+            <a href="">Contact</a>
+            <a href="">Cart</a>
+            <button class="button-subscribe">Subscribe</button>
+        </nav>
+        <div class="content">
+            <button class="button-adventure">Adventure</button><br>
+            <h1>Conqurer the wild:<br>Exploring terrains and<br>conquering nature</h1><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Repellendus labore reprehenderit dolorem dignissimos <br>voluptatum ad. Nobis quibusdam dicta delectu</p>
+        </div>
+    </div>
+    <div class="article-row">
+            <h4>Article catogories</h4>
+            <button class="button-browse">Browse all article</button>
+    </div>
+    <div class="container-flex">
+        <div class="flex2">
+            <div class="box1"><h4 class="box-head">Travel</h4><br><p class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing<br>elit. Id, neque.</p></div>
+            <div class="box2"><h4 class="box-head">Adventure</h4><br><p class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing<br>elit. Id, neque.</p></div>
+            <div class="box3"><h4 class="box-head">Gear</h4><br><p class="box-text">Lorem ipsum dolor sit amet, consectetur adipisicing<br>elit. Id, neque.</p></div>
+        </div>
+            <p style="color: black; font-size: 12px; position: absolute; top: 1200px;">Most Popular</p>
+            <hr class="left-align">
+        <hr class="hr">
+        <div class="flex3">
+            <div><p class="black-text">Unveiling hidden gems:Exploringoff-<br>the-beaten-path destinations</p></div>
+            <div><p class="black-text">Conqurer the wild:Exploring terrains and<br>conquering nature</p></div>
+            <div><p class="black-text">Gear up for adventure:Equipment for<br>outdoor enthusiasts</p></div>
+        </div>
+        <div class="flex4">
+            <div class="flex4-content">
+                <h2>Subscribe to our newsletter to receive our daily news</h2>
+                <p  style="opacity: 75%;">Lorem ipsum dolor sit amet consectetur,adipisicing elit. <br>Voluptatibus et neque suscipit beatae architecto<br> sapiente, quae consequuntur nostrum<br> omnis impedit tenetur, qui sequi.</p>
+                <div><input type="email" name="email" placeholder="e-mail">&nbsp;&nbsp;<button class="button-subscribe">Subscribe</button></div>
+            </div>
+            <div class="flex4-image">
+            </div>
+        </div>
+        <div class="flex5">
+            <div class="flex5-image">
+                <h2 class="flex5-image-text">Unveiling hidden gems:Exploringoff-<br>the-beaten-path destinations</h2>
+            </div>
+            <div class="flex5-content">
+                <img src="img6.jpg" alt="" style="width: 80px; height: 80px; border-radius: 50px;">
+                <h4>Sophie Moore</h4>
+                <p style="color: black; font-size: smaller;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Aliquid ratione vero minus incidunt.</p>
+                <div class="icons">
+                    <span>𝕏</span>
+                    <span>f</span>
+                    <span>◎</span>
+                    <span>in &copy;</span>
+                </div>
+                <hr class="left-align" ><br>
+                <b style="font-size: small;">Most Popular</b>
+            </div>
+        </div>
+        <div class="flex6">
+            <div class="flex6-image1"></div>
+            <div class="flex6-image2"></div>
+        </div>
+    </div>
+</body>
+</html>
