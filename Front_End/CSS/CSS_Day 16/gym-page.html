@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ironforge.com</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+        background-image: url(gym.jpg);
+        background-size: cover;
+        position: relative;
+    }
+    .overlay {
+        position: fixed; /* Stay in place */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5); /* Semi-transparent black */
+        display: none; /* Hidden by default */
+        z-index: 999; /* On top of other elements */
+        }
+
+        /* Content inside overlay */
+        .overlay-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .nav{
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0,0,0,0.5);
+        color: aliceblue;
+        position: fixed;  
+        width: 100%;          /* Stays at top */
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    a{
+        color: rgba(255, 255, 255, 0.80);
+        text-decoration: none;
+        font-family: poppins;
+        font-size: smaller;
+        margin-left: 20px;
+    }
+    .button-join, .button-trial{
+        background: #ff0000;
+        color: white;
+
+        border: none;
+        border-radius: 14px;
+
+        padding: 10px 18px;
+
+        font-size: 18px;
+        font-weight: 600;
+
+        cursor: pointer;
+    }
+    h4{
+        font-family: arial;
+        font-size: large;
+        position: relative;
+        right: 90px;
+    }
+    .button{
+        width: 120px;
+        height: 30px;
+
+        background: rgba(255, 0, 0, 0.45);
+        border: 1px solid red;
+
+        border-radius: 28px;
+
+        backdrop-filter: blur(28px);
+        -webkit-backdrop-filter: blur(28px);
+
+        color: aliceblue;
+
+    }
+    .mid-button{
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .contend{
+        display: flex;
+        margin-top: 150px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: poppins;
+    }
+    h1{
+        color: aliceblue;
+        font-size: 60px;
+    }
+    span{
+        color: red;
+    }
+    p{
+        color: aliceblue;
+        font-family: poppins;
+        text-align: center;
+    }
+    .svg-tumble{
+        height: 40px;
+        width: 40px;
+    }
+    .svg{
+        height: 15px;
+        width: 15px;
+        position: relative;
+        top: 3px;
+        opacity: 75%;
+    }
+
+    
+</style>
+<body class="overlay">
+    <nav class="nav">
+        <div><svg class="svg-tumble" fill="#ff0000" viewBox="0 0 50 50" version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" overflow="inherit" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M17.962 44.874c.374.403.352 1.041-.05 1.416l-2.172 2.031c-.402.375-1.037.353-1.411-.051l-12.649-13.632c-.374-.403-.351-1.04.051-1.416l2.175-2.028c.402-.376 1.037-.353 1.411.051l12.645 13.629zm16.14-25.65c.374.403.351 1.041-.051 1.416l-13.67 12.77c-.402.375-1.037.353-1.411-.051l-3.263-3.521c-.374-.403-.351-1.041.051-1.416l13.667-12.77c.401-.375 1.036-.353 1.41.051l3.267 3.521zm-11.489 21.303c.374.403.351 1.04-.051 1.416l-2.175 2.03c-.402.376-1.037.353-1.411-.051l-12.642-13.632c-.374-.403-.352-1.041.05-1.416l2.171-2.029c.402-.375 1.037-.353 1.411.051l12.647 13.631zm21.063-20.814c.374.403.351 1.041-.052 1.416l-2.174 2.03c-.402.375-1.037.353-1.412-.05l-12.644-13.629c-.375-.403-.352-1.04.05-1.416l2.18-2.035c.401-.375 1.036-.353 1.41.051l12.642 13.633zm4.644-4.34c.374.403.351 1.041-.051 1.417l-2.17 2.029c-.401.376-1.036.353-1.41-.05l-12.642-13.635c-.374-.403-.352-1.041.05-1.417l2.172-2.033c.401-.376 1.035-.354 1.409.05l12.642 13.639z"></path></g></svg></div>
+        <h4>Iron <span>Forge</span></h4></div>
+        <div>
+            <a href="">About</a>
+            <a href="">Programs</a>
+            <a href="">Schedule</a>
+            <a href="">Trainers</a>
+            <a href="">Pricing</a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+            <a href=""><svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11 1C11 0.447715 11.4477 0 12 0C12.5523 0 13 0.447715 13 1V3C13 3.55228 12.5523 4 12 4C11.4477 4 11 3.55228 11 3V1Z" fill="#ffffff"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12ZM8.06167 12C8.06167 14.1751 9.82492 15.9383 12 15.9383C14.1751 15.9383 15.9383 14.1751 15.9383 12C15.9383 9.82492 14.1751 8.06167 12 8.06167C9.82492 8.06167 8.06167 9.82492 8.06167 12Z" fill="#ffffff"></path> <path d="M20.4853 3.51472C20.0947 3.12419 19.4616 3.12419 19.0711 3.51472L17.6568 4.92893C17.2663 5.31946 17.2663 5.95262 17.6568 6.34315C18.0474 6.73367 18.6805 6.73367 19.0711 6.34315L20.4853 4.92893C20.8758 4.53841 20.8758 3.90524 20.4853 3.51472Z" fill="#ffffff"></path> <path d="M1 13C0.447715 13 0 12.5523 0 12C0 11.4477 0.447715 11 1 11H3C3.55228 11 4 11.4477 4 12C4 12.5523 3.55228 13 3 13H1Z" fill="#ffffff"></path> <path d="M3.51472 3.51472C3.1242 3.90524 3.1242 4.53841 3.51472 4.92893L4.92894 6.34315C5.31946 6.73367 5.95263 6.73367 6.34315 6.34315C6.73368 5.95262 6.73368 5.31946 6.34315 4.92893L4.92894 3.51472C4.53841 3.12419 3.90525 3.12419 3.51472 3.51472Z" fill="#ffffff"></path> <path d="M11 21C11 20.4477 11.4477 20 12 20C12.5523 20 13 20.4477 13 21V23C13 23.5523 12.5523 24 12 24C11.4477 24 11 23.5523 11 23V21Z" fill="#ffffff"></path> <path d="M6.34315 17.6569C5.95263 17.2663 5.31946 17.2663 4.92894 17.6569L3.51473 19.0711C3.1242 19.4616 3.1242 20.0948 3.51473 20.4853C3.90525 20.8758 4.53842 20.8758 4.92894 20.4853L6.34315 19.0711C6.73368 18.6805 6.73368 18.0474 6.34315 17.6569Z" fill="#ffffff"></path> <path d="M21 13C20.4477 13 20 12.5523 20 12C20 11.4477 20.4477 11 21 11H23C23.5523 11 24 11.4477 24 12C24 12.5523 23.5523 13 23 13H21Z" fill="#ffffff"></path> <path d="M17.6568 17.6569C17.2663 18.0474 17.2663 18.6805 17.6568 19.0711L19.0711 20.4853C19.4616 20.8758 20.0947 20.8758 20.4853 20.4853C20.8758 20.0948 20.8758 19.4616 20.4853 19.0711L19.0711 17.6569C18.6805 17.2663 18.0474 17.2663 17.6568 17.6569Z" fill="#ffffff"></path> </g></svg></a>
+        </div>
+        <div style="margin-right: 50px;">
+            <button class="button-join">Join Now</button>
+        </div>
+    </nav>
+    <div class="contend">
+        <div><button class="button">Now Open 24/7</button><br></div>
+        <div><h1>Push Beyond<br><span>Every Barrier</span></h1></div>
+
+        <div><p>World-class equipment. expert trainers, and a community
+        that pushes<br>you further. Start your transformation today</p></div>
+    </div>
+    <div class="mid-button">
+        <button class="button-join">Start Free Trial</button>
+        <button class="button-join" style="background: transparent; border: 1px solid red;">View Programs</button>
+    </div>
+
+
+</body>
+</html>

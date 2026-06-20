@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Radius</title>
+<style>
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .image1, .image2, .image3, .image4{
+        height: 250px;
+        width: 400px;
+        border-radius: 18% 18% 0% 18%;
+        /* border-top-left-radius: 28px; */
+    }
+    .image2{
+        border-radius: 18% 18% 18% 0%;
+    }
+    .image3{
+        border-radius: 18% 0% 18% 18%;
+    }
+    .image4{
+        border-radius: 0% 18% 18% 18%;
+    }
+</style>
+</head>
+<body>
+    <div class="flex">
+        <img src="R.jpeg" alt="valkire" class="image1">
+        <img src="R.jpeg" alt="valkire" class="image2">
+        <img src="R.jpeg" alt="valkire" class="image3">
+        <img src="R.jpeg" alt="valkire" class="image4">
+    </div>
+</body>
+</html>

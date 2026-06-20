@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions.com</title>
+</head>
+<style>
+    .container{
+        width: 900px;
+    }
+    .row{
+        display: flex;
+        background-color: rgb(2, 48, 63);
+        height: 200px;
+        padding: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        gap: 10px;
+    }
+    .box1{
+        position: static;
+        top: 20px;
+        left: 20px;
+        background-color: red;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        width: 100px;
+        height: 50px;
+        align-content: center;
+        text-align: center;
+    }
+    .box4{
+        background-image: url(2025.jpg);
+        background-size: cover;
+        flex-wrap: wrap;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        width: 700px;
+        height: 400px;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.35;
+    }
+    .box5{
+        background-image: url(Ford-Mustang_Shelby_GT350.jpg);
+        background-size: cover;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        width: 500px;
+        height:300px;
+        position: absolute;
+        z-index: 2;
+        opacity: 0.75;
+    }
+    .box6{
+        background-image: url(Ferrari\ Formula\ one.webp);
+        background-size: cover;
+        width: 300px;
+        height: 175px;
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        position: absolute;
+        z-index: 3;
+    }
+    .box2{
+        position: relative;
+        top: 40px;
+        left: 20px;
+        background-color: rgb(13, 255, 0);
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        width: 100px;
+        height: 50px;
+        align-content: center;
+        text-align: center;
+    }
+    .box3{
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        background-color: rgb(0, 68, 255);
+        border-radius: 12px;
+        border: none;
+        outline: none;
+        width: 100px;
+        height: 50px;
+        align-content: center;
+        text-align: center;
+    }
+    p{
+        text-align: left;
+        font-weight: bold;
+        font-family: arial;
+        font-size: medium;
+    }
+    h2{
+        font-family: arial;
+    }
+    .sticky{
+        position: sticky;
+        top: 0;
+        background-color: chocolate;
+        color: aliceblue;
+        padding: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .content{
+        height: 1000px;
+    }
+    .fix{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: crimson;
+        color: aliceblue;
+        bottom: 20px;
+        right: 20px;
+    }
+</style>
+<body>
+    <center><h2>CSS Position Property Examples</h2></center>
+    <p>1. Position : Static</p>
+    <div class="container">
+        <div class="row">
+            <div class="box1">Static</div>
+        </div>
+    </div>
+
+    <p>2. Position : Relative</p>
+    <div class="container">
+        <div class="row">
+            <div class="box2">Relative</div>
+        </div>
+    </div>
+
+    <p>3. Position : Absolute</p>
+   <div class="container">
+    <div class="row">
+            <div class="box3">Absolute</div>
+        </div>
+   </div>
+
+   <p>6. Overlaying (index)</p>
+   <div class="container">
+        <div class="row" style="height: fit-content;">
+            <div class="box4"></div>
+            <div class="box5"></div>
+            <div class="box6"></div>
+        </div>
+   </div>
+
+   <p>7. Position : (sticky)</p>
+        <div class="sticky">
+            I'm Sticky Mate
+        </div>
+   
+
+   <div class="content">
+        <p>keep scrolling to keep the sticky element stay at the top.</p>
+        <p>The fixed element will remain at the bottom-rightcorner of the screen.</p>
+        <p>scroll down further...</p>
+   </div>
+   
+   <div class="fix">Fixed</div>
+        
+    
+</body>
+</html>

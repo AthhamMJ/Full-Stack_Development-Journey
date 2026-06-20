@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workout.com</title>
+</head>
+<style>
+    .container{
+        width: 500px;
+    }
+    .row{
+        width: 500px;
+        height: 500px;
+        background-color: rgb(22, 42, 66);
+        display: flex;
+        position: relative;
+
+    }
+    .box1{
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: red;
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        z-index: 1;
+    }
+    .box2{
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: green;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 2;
+    }
+    .box3{
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: skyblue;
+        position: absolute;
+        top: 150px;
+        left: 200px;
+        z-index: 4;
+        
+    }.box4{
+        height: 200px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: blue;
+        position: absolute;
+        top: 200px;
+        left: 70px;
+        z-index: 3;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+    </div>
+</body>
+</html>

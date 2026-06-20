@@ -5,4 +5,4 @@ function star_up(n){
         star+="*"
     }
 }
-star_up(5)
+star_up(5);

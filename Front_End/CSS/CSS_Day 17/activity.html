@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity.com</title>
+</head>
+<style>
+    .flex1{
+        display: flex;
+        width: 440px;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .flex2{
+        display: flex;
+        width: 440px;
+        gap: 10px;
+    }
+    .f2-r1, .f2-r2{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    img{
+        width: 120px;
+        height: 120px;
+        background-size: cover;
+    }
+    .image1{
+        border-radius: 100%;
+    }
+    .image2{
+        border-radius: 0% 50% 0% 0%;
+    }
+    .image3{
+        border-radius: 0% 0% 50% 0%;
+    }
+    .image4{
+        border-radius: 60px 60px 0% 60px;
+        width: 120px;
+        height: 120px;
+    }
+    .image5{
+        width: 260px;
+        height: 200px;
+        border-radius: 50px 0px 50px 0px ;
+    }
+    .image6{
+        width: 120px;
+        height: 230px;
+        border-radius: 50px 0px 0px 50px ;
+
+    }
+    .image7{
+        width: 260px;
+        height: 150px;
+        border-radius: 50px 50px 50px 0px ;
+        /* position: absolute;
+        left: 120px;
+        top: 292px; */
+    }
+    
+</style>
+<body>
+    <div class="flex1">
+        <img src="R.jpeg" alt="" class="image1">
+        <img src="R.jpeg" alt="" class="image2">
+        <img src="R.jpeg" alt="" class="image3">
+    </div>
+    <div class="flex2">
+        <div class="f2-r1">
+            <img src="R.jpeg" alt="" class="image4">
+            <img src="R.jpeg" alt="" class="image6">
+            
+        </div>
+        <div class="f2-r2">
+            <img src="R.jpeg" alt="" class="image5">
+            <img src="R.jpeg" alt="" class="image7">
+        </div>
+    </div>
+</body>
+</html>

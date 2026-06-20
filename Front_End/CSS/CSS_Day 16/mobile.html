@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ironforge.com</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background: black;
+}
+
+/* BACKGROUND */
+body{
+    background-image: url(gym.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* DARK OVERLAY */
+body::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at center, rgba(0,0,0,0.2), rgba(0,0,0,0.85));
+    z-index: -1;
+}
+
+/* NAVBAR */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    z-index: 1000;
+    flex-wrap: wrap;
+}
+
+/* LOGO TEXT */
+h4{
+    color: white;
+    font-size: 18px;
+}
+
+span{
+    color: red;
+}
+
+/* LINKS */
+a{
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 13px;
+}
+
+/* JOIN BUTTON */
+.button-join{
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+/* HERO SECTION */
+.contend{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 0 20px;
+}
+
+h1{
+    color: white;
+    font-size: clamp(34px, 6vw, 56px);
+}
+
+p{
+    color: rgba(255,255,255,0.85);
+    margin-top: 10px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+/* SMALL TAG BUTTON */
+.button{
+    margin-bottom: 20px;
+
+    padding: 10px 18px;
+    border-radius: 999px;
+
+    background: rgba(255,0,0,0.35);
+    border: 1px solid red;
+
+    color: white;
+
+    backdrop-filter: blur(20px);
+}
+
+/* ICONS */
+.svg{
+    width: 16px;
+    height: 16px;
+    opacity: 0.8;
+}
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    a{
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="nav">
+
+    <div style="display:flex; align-items:center; gap:10px;">
+        <!-- logo -->
+        <svg width="32" height="32" fill="red" viewBox="0 0 50 50">
+            <path d="M17.962 44.874c.374.403.352 1.041-.05 1.416l-2.172 2.031c-.402.375-1.037.353-1.411-.051l-12.649-13.632c-.374-.403-.351-1.04.051-1.416l2.175-2.028c.402-.376 1.037-.353 1.411.051l12.645 13.629z"></path>
+        </svg>
+
+        <h4>Iron <span>Forge</span></h4>
+    </div>
+
+    <div>
+        <a href="#">About</a>
+        <a href="#">Programs</a>
+        <a href="#">Schedule</a>
+        <a href="#">Trainers</a>
+        <a href="#">Pricing</a>
+    </div>
+
+    <button class="button-join">Join Now</button>
+
+</nav>
+
+<div class="contend">
+
+    <button class="button">Now Open 24/7</button>
+
+    <h1>Push Beyond<br><span>Every Barrier</span></h1>
+
+    <p>
+        World-class equipment. expert trainers, and a community that pushes you further.
+        Start your transformation today.
+    </p>
+
+</div>
+
+</body>
+</html>

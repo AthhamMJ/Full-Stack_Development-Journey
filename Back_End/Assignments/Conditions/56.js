@@ -27,4 +27,4 @@ function week(number){
     }
     console.log("Today is a "+day);
 }
-week(3);
+week(7);

@@ -7,4 +7,4 @@ function positive(n){
     }
     console.log(count)
 }
-positive(50)
+positive(50);
