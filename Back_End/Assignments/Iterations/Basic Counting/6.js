@@ -1,10 +1,8 @@
-let x = 1;
-while(x <= 100){
-    if(x % 3 == 0 & x % 7 ==0){
-        console.log(x);
-        x++;
-    }
-    else{
-        x++;
+function threeandseven(){
+    for (let n = 0; n <= 100; n++){
+        if(n % 3 == 0 & n % 7 == 0){
+            console.log(n);
+        }
     }
 }
+threeandseven()

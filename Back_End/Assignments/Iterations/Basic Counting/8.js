@@ -1,17 +1,10 @@
-function fact(number){
-    let n = number;
-    let factorial = 1;
-    do{
-      if(n % 2 == 0){
-        factorial += n;
-        n--;
+function Odd(n){
+  let odd = 0
+  for(;n > 0; n--){
+      if(n % 2 ==1){
+        odd+=n;
       }
-      else{
-        n--;
-      }
-    }
-    while(n > 0){
-        console.log(factorial)
-    }
+  }
+    console.log("The sumation of odd number is: "+ odd)
 }
-fact(100);
+Odd(100);

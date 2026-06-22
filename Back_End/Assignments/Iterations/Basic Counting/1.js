@@ -1,5 +1,6 @@
-let x = 1;
-while(x <= 20){
-    console.log(x);
-    x++;
+function twenty(){
+    for(let n = 1; n <= 20; n++){
+        console.log(n)
+    }
 }
+twenty();
