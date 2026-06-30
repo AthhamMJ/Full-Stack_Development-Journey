@@ -8,4 +8,4 @@ function factor(n){
         }
     }
 }
-factor(5);
+factor(28);

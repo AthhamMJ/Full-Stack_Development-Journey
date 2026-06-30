@@ -1,24 +1,19 @@
 function main(){
-    let n = 9;
-    if (isPrime(n)){
-        console.log("This is a Prime Number")
-    }
-    else{
-        console.log("This is Not a Prime Number")
-    }
-}
-main();
-function isPrime(n) {
-    if (n < 2) {
-        return false;
-    }
-    else{
-        for (let div = 2; div <= Math.sqrt(n); div++) {
-        if (n % div === 0) {
-            return false;
+    let n = 1000
+    for(let i = 1; i <= n; i++){
+        if(isPalindrome(i)){
+            console.log(i)
         }
     }
-    return true;
-    }
-    
 }
+
+function isPalindrome(n){
+    let reverse = 0;
+    let number = n;
+    for(; n > 0; n = Math.floor(n / 10)){
+        reverse = reverse * 10 + (n % 10);
+    }
+    return reverse === number;
+}
+
+main();
