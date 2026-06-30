@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>f1.reaction.com</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        width: 800px;
+        height: 350px;
+        background-color: black;
+        border-radius: 38px;
+    }
+    .inner-circle{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .light-sector1{
+        animation: bitdog 6s linear infinite;
+        animation-delay: 1s;
+    }
+    .light-sector2{
+        animation: bitdog 6s linear infinite;
+        animation-delay: 2s;
+    }
+    .light-sector3{
+        animation: bitdog 6s linear infinite;
+        animation-delay: 3s;
+    }
+    .light-sector4{
+        animation: bitdog 6s linear infinite;
+        animation-delay: 4s;
+    }
+    .light-sector5{
+        animation: bitdog 6s linear infinite;
+        animation-delay: 5s;
+    }
+    .light-sector6{
+        animation: bitdog 6s linear infinite;
+        animation-delay: 6s;
+    }
+    .light-sector1, .light-sector2, .light-sector3, .light-sector4, .light-sector5, .light-sector6{
+        width: 100px;
+        height: 100px;
+        border-radius: 70px;
+        background-color: grey;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        box-shadow:
+            inset 0 2px 2px rgba(255,255,255,0.5),
+            inset 0 -2px 2px rgba(255, 255, 255, 0.2);
+
+        backdrop-filter: blur(28px);
+        -webkit-backdrop-filter: blur(28px);
+    }
+    @keyframes bitdog{
+        0%, 50%{
+            background-color: red ;
+        }
+        51%, 100%{
+            background-color: greenyellow;
+            interest-delay: 8s;
+        }
+    }
+    
+</style>
+<body>
+    <div class="box">
+        <div class="inner-circle">
+            <div class="light-sector1"></div>
+            <div class="light-sector1"></div>
+            <div class="light-sector1"></div>
+        </div>
+        <div class="inner-circle">
+            <div class="light-sector2"></div>
+            <div class="light-sector2"></div>
+            <div class="light-sector2"></div>
+        </div>
+        <div class="inner-circle">
+            <div class="light-sector3"></div>
+            <div class="light-sector3"></div>
+            <div class="light-sector3"></div>
+        </div>
+         <div class="inner-circle">
+            <div class="light-sector4"></div>
+            <div class="light-sector4"></div>
+            <div class="light-sector4"></div>
+        </div>
+         <div class="inner-circle">
+            <div class="light-sector5"></div>
+            <div class="light-sector5"></div>
+            <div class="light-sector5"></div>
+        </div>
+         <div class="inner-circle">
+            <div class="light-sector6"></div>
+            <div class="light-sector6"></div>
+            <div class="light-sector6"></div>
+        </div>
+    </div>
+</body>
+</html>

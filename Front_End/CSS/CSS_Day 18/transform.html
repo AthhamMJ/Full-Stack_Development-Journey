@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform.com</title>
+</head>
+<style>
+    body{
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(45deg, rgb(14, 14, 224), #ff6b6b, #4e92cd);
+        gap: 40px;
+    }
+    .box1{
+        width: 150px;
+        height: 150px;
+        border-radius: 28px;
+        background-color: crimson;
+        transform:  translate3d(10px, 10px, 10px);
+         /* transform: translate3d(40px, 10px, 0); */
+    }
+    .row1{
+        display: flex;
+        gap: 40px;
+    }
+    .box2{
+        width: 150px;
+        height: 150px;
+        border-radius: 28px;
+        background-color: rgb(53, 20, 220);
+        transform: rotateY(45deg);
+    }
+    .box3{
+        width: 150px;
+        height: 150px;
+        border-radius: 28px;
+        background-color: rgb(255, 128, 0);
+
+        margin: 10px 50px;
+        transform: scale(1.5);
+    }
+    .box4{
+        width: 150px;
+        height: 150px;
+        border-radius: 28px;
+        background-color: rgb(0, 0, 0);
+        transform: skewY(20deg);
+        margin: 20px 20px;
+    }.box5{
+        width: 150px;
+        height: 150px;
+        border-radius: 28px;
+        background-color: rgb(68, 255, 0);
+        transform: matrix(12px ,45deg, 0deg, 12px, 30deg, 15deg);
+    }
+</style>
+<body>
+    <div class="row1">
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+        <div class="box1"></div>
+    </div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>

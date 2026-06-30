@@ -3,4 +3,4 @@ function twenty(){
         console.log(n)
     }
 }
-twenty();
+twenty();sh 

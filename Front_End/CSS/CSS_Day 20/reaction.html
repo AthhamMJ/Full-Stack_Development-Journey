@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>driver_reaction.com</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+        padding: 180px 0px;
+    }
+    .f1car{
+        width: 60px;
+        height: 100px;
+        /* background-color: rebeccapurple; */
+        /* background-image: url(Mercedes-F1-Car-Racing-Circuit-Performance-PNG-thumb.png); */
+        animation: go 1500ms linear infinite;
+        position: relative;
+        right: 50px;
+        left: 5px;
+    }
+    @keyframes go{
+        0%, 20%{
+            transform: translateY(100px);
+        }
+        20%, 40%{
+            transform: rotate(-20deg);
+        }
+        40%, 50%{
+            transform: translateX(-100px);
+        }
+        50%, 60%{
+            transform: rotate(20deg);
+        }
+        60%, 80%{
+            transform: translateX(20deg);
+        }
+        100%{
+            transform: translateY(-200px);
+        }
+    }
+    .circle{
+        border: 10px solid blue;
+        border-top: 10px solid orange;
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        animation:load 1s linear infinite;
+    }
+    @keyframes load{
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    .box{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        width: 170px;
+        height: 350px;
+        border-radius: 28px;
+        border: none;
+    }
+    .round1, .round2, .round3{
+        width: 90px;
+        height: 90px;
+        border-radius: 90px;
+        border: none;
+    }
+    .round1{
+        background-color: rgb(61, 61, 61);
+        animation-name: red;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    .round2{
+        background-color: rgb(61, 61, 61);
+        animation-name: yellow;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    .round3{
+        background-color: rgb(61, 61, 61);
+        animation-name: green;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes red{
+        0%, 33%{
+            background-color: red;
+        }
+        34%, 100%{
+            background-color: rgb(61, 61, 61);
+        }
+    }
+    @keyframes yellow{
+        0%, 33%{
+            background-color:  rgb(61, 61, 61);
+        }
+        34%, 66%{
+            background-color: yellow;
+        }
+        67%, 100%{
+            background-color:  rgb(61, 61, 61);
+        }
+    }
+    @keyframes green{
+        0%, 66%{
+            background-color:  rgb(61, 61, 61);
+        }
+        67%, 100%{
+            background-color: rgb(0, 255, 0);
+        }
+    }
+    
+</style>
+<body>
+    <div class="circle"></video></div>
+    <div class="f1car"><img src="Mercedes-F1-Car.png" alt="" width="100px" height="180px"></div>
+    <div class="box">
+        <div class="round1"></div>
+        <div class="round2"></div>
+        <div class="round3"></div>
+    </div>
+</body>
+</html>

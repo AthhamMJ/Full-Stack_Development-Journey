@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table.com</title>
+</head>
+<style>
+    body{
+        font-size: larger;
+        font-family: poppons;
+    }
+    table{
+        border: 2px solid rgb(108, 0, 0);
+        border-collapse: collapse;
+    }
+     th, tr, td{
+        padding: 20px;
+     }
+    .box1c1, .box1c2, .box2c1, .box2c2, .box3c1, .box3c2, .box4c1, .box4c2, .box5c1, .box5c2, .box6c1, .box6c2{
+        width: 50px;
+        height: 50px;
+        border-radius: 12px;
+    }
+    .box1c1, .box1c2{
+        background-color: black;
+    }
+    .box1c2{
+        transform: translateX(10px);
+    }
+    .box2c1, .box2c2{
+
+        background-color: rgb(255, 0, 0);
+    }
+    .box2c2{
+        transform: translateY(10px);
+    }
+    .box3c1, .box3c2{
+        background-color: rgb(0, 255, 13);
+    }
+    .box3c2{
+        transform: translateZ(30px);
+    }
+    .box4c1, .box4c2{
+        background-color: rgb(0, 81, 255);
+    }
+    .box4c2{
+        transform: translate3d(10px ,2px 2px);
+    }
+    .box5c1, .box5c2{
+        background-color: rgb(177, 0, 92);
+    }
+    .box5c2{
+        transform: rotateX(45deg);
+    }
+    .box6c1, .box6c2{
+        background-color: rgb(166, 0, 255);
+    }
+    .box6c2{
+        transform: rotateY(45deg);
+    }
+
+</style>
+<body>
+    <table border="1px solid black">
+        <tr>
+            <th>Beofre</th>
+            <th>After</th>
+        </tr>
+        <tr>
+            <td>Transform: translateX(10px) <div class="box1c1"></div> </td>
+            <td><div class="box1c2"></div></td>
+        </tr>
+        <tr>
+            <td>Transform: translateY(10px) <div class="box2c1"></div> </td>
+            <td><div class="box2c2"></div></td>
+        </tr>
+        <tr>
+            <td>Transform: translateZ(10px) <div class="box3c1"></div> </td>
+            <td><div class="box3c2"></div></td>
+        </tr>
+        <tr>
+            <td>Transform: translate3d(10px ,2px 2px) <div class="box4c1"></div> </td>
+            <td><div class="box4c2"></div></td>
+        </tr>
+        <tr>
+            <td>Transform: rotateX(45deg) <div class="box5c1"></div> </td>
+            <td><div class="box5c2"></div></td>
+        </tr>
+        <tr>
+            <td>Transform: rotateY(45deg) <div class="box6c1"></div> </td>
+            <td><div class="box6c2"></div></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

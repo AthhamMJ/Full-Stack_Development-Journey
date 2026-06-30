@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anime</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+    }
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .box{
+        width: 150px;
+        height: 150px;
+        border-radius: 28px;
+        background-color: rgba(255, 0, 0, 0.2);
+        border: 2px solid red;
+        transition: all 1500ms ease;
+    } 
+    .box:hover{
+        transform: rotateZ(360deg) scale(1.2);
+        /* transform: scale(1.2); */
+    }
+    .box2{
+        width: 150px;
+        height: 150px;
+        border-radius: 50px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 2px solid rgb(255, 255, 255);
+        animation-name: updown;
+        animation-duration: 500ms;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+
+    }
+    /* .box2:hover{
+        transform: rotateZ(360deg) scale(1.2);
+        /* transform: scale(1.2); 
+    } */
+    
+    @keyframes updown{
+        0%{
+            transform: translateX(20px);
+            background-color: rgb(255, 0, 0);
+        }
+        50%{
+            transform: translateY(0px);
+            background-color: rgb(255, 251, 0);
+        }
+        100%{
+            transform: translateX(20px);
+            background-color: rgb(98, 255, 0);
+        }
+    }
+</style>
+<body>
+    <div class="flex">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="flex">
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+    </div>
+    <div class="flex">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
