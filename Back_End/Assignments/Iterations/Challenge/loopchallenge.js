@@ -6,10 +6,11 @@ function main(){
     reverse(23547);
     sumofdigit(12345);
     palindrome(100);
-    prime(100);
+    isprime(9);
     factor(28);
     fibenocci(28);
     large(1254536569);
+    prime(100);
 }
 
 function onetotwenty(n){
@@ -82,19 +83,21 @@ function palindrome(n) {
     console.log("");
 }
 
-function prime(n){
-    for(let count = 2; count <= 100; count++){
-        let prime = true;
-        for(let div = 2; div <= Math.sqrt(count); div++){
-            if(count % div === 0){
-                prime = false;
+function isprime(n){
+    for(let div = 0; div < Math.sqrt(n); div++){
+        let isprime = true;
+            if(n % div === 0){
+                isprime = false;
                 break;
             }
         }
-        if(prime){
-            console.log(count);
+        if(isprime == true){
+            console.log(n+ " : is a Prime Number");
         }
-    }
+        else{
+            console.log(n+" : is Not a Prime number")
+
+        }
     console.log("");
 }
 
@@ -128,4 +131,21 @@ function large(n){
     }
     console.log(max);
 }
+
+function prime(n){
+    for(let count = 2; count <= 100; count++){
+        let prime = true;
+        for(let div = 2; div <= Math.sqrt(count); div++){
+            if(count % div === 0){
+                prime = false;
+                break;
+            }
+        }
+        if(prime){
+            console.log(count);
+        }
+    }
+    console.log("");
+}
+
 main();
