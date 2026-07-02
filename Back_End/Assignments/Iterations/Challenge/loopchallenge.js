@@ -11,6 +11,7 @@ function main(){
     fibenocci(28);
     large(1254536569);
     prime(100);
+    Amstrong(1000);
 }
 
 function onetotwenty(n){
@@ -146,6 +147,24 @@ function prime(n){
         }
     }
     console.log("");
+}
+
+function Amstrong(n){
+    for(let i = 0; i <= n; i++){
+        let temp = i; 
+        let count = 0; 
+        for(;temp > 0; temp = Math.floor(temp /10)){
+            count++;
+        }
+        temp = i;
+        let sum = 0;
+        for(;temp > 0; temp = Math.floor(temp / 10)){
+            sum += Math.pow((temp % 10), count);
+        }
+        if(i === sum){
+            console.log(i);
+        }
+    }
 }
 
 main();
