@@ -31,8 +31,12 @@ function sumfifty(n){
 }
 
 function multable(n){
-    for(let count = 1; count <= n; count++){
-        console.log(count+ " X " +n+ " = " + (count * n));
+    for(let row = 1; row < n; row++){
+        let mul= ""
+        for(let col = 1; col < n; col++){
+            mul += (row*col) + "\t"; 
+        }
+        console.log(mul);
     }
     console.log("");
 }

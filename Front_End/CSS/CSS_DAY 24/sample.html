@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample.com</title>
+</head>
+<style>
+    *{
+        font-family: Arial;
+        margin: 0;
+        padding: 0;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        margin: 20px;
+    }
+    .h4{
+        color: rgb(0, 225, 255);
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    svg{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 10px;
+        left: 85px;
+    }
+    h5{
+        color: rgb(0, 225, 255);
+        font-weight: bold;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h2{
+        position: relative;
+        z-index: 100;
+    }
+    .contend{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .box-row{
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1000;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        width: 280px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+    }
+    .box-image{
+        flex: 2;
+        background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(imagea.jpg);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-size: cover;
+        text-align: center;
+        padding: 30px;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+    }
+    .box-content{
+        flex: 3;
+        text-align: center;
+        padding: 10px;
+        line-height: 35px;
+        opacity: 1;
+        color: rgba(0,0,0,0.6);
+        font-size: 14px;
+        position: relative;
+    }
+    .blue-design{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 70px;
+        top: 450px;
+    }
+    .rectangle{
+        background-color: rgb(0, 225, 255);
+        border-radius: 20px;
+        width: 1080px;
+        height: 200px;
+    }
+    .circular{
+        background-color: rgb(0, 225, 255);
+        width: 1080px;
+        height: 200px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        position: absolute;
+        top: 100px;
+    }
+    button{
+        background-color: rgb(0, 225, 255);
+        border: none;
+        border-radius: 28px;
+        height: 40px;
+        width: 120px;
+        text-align: center;
+    }
+    hr{
+        opacity: 50%;
+    }
+</style>
+<body>
+    <div class="nav">
+        <div class="h4"><svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#f2f2f2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1 6V15H6V11C6 9.89543 6.89543 9 8 9C9.10457 9 10 9.89543 10 11V15H15V6L8 0L1 6Z" fill="RGB(0, 225, 255)"></path> </g></svg>HOME</div>
+        <div>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Service</a>
+            <a href="">Pricing</a>
+            <a href="">Pages</a>
+            <a href="">Contact</a>
+        </div>
+    </div>
+    <hr><br>
+    <div class="contend">
+        <h5>MEDICAL PACKAGES</h5><hr style="width: 130px; height: 3px; border: none; background-color: rgb(154, 154, 154); opacity: 40%;"><br>
+        <h1>Awsome Medical<br>Programes</h1>
+    </div><br><br>
+    <div class="box-row">
+        <div class="box">
+            <div class="box-image"><h2>Health Cheackup</h2>$99</div>
+            <div class="box-content">Energency Medical Treatment<br>Highly Experienced Doctor<br>Highest Sicces Rate<br>Telephone Service<br><button>Apply Now</button></div>
+        </div>
+        <div class="box">
+            <div class="box-image"><h2>Health Cheackup</h2>$99</div>
+            <div class="box-content">Energency Medical Treatment<br>Highly Experienced Doctor<br>Highest Sicces Rate<br>Telephone Service<br><button>Apply Now</button></div>
+        </div>
+        <div class="box">
+            <div class="box-image"><h2>Health Cheackup</h2>$99</div>
+            <div class="box-content">Energency Medical Treatment<br>Highly Experienced Doctor<br>Highest Sicces Rate<br>Telephone Service<br><button>Apply Now</button></div>
+        </div>
+    </div>
+    <div class="blue-design">
+        <div class="rectangle"></div>
+        <div class="circular"></div>
+    </div>
+</body>
+</html>
