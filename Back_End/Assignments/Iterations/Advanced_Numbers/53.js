@@ -1,5 +1,5 @@
 function main(){
-    perfect(18);
+    perfect(28);
 }
 
 function perfect(n){
