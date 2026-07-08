@@ -1,9 +1,9 @@
-//Check whether an array contains a specific value. 
+//Check the index of A GIVEN value. 
 function Array(){
     let fruits = ['Tangerine', 'Lemon', 'Mango', 'Apple', 'Pine-Apple', 'Avacado', 'Jack', 'Mangustine', 'Dragon'];
-    for(const i of fruits){
-        if(fruits[i] = 'Lemon'){
-            console.log(fruits[i] + " found !")
+    for(let i = 0; i < fruits.length; i++){
+        if(fruits[i] == 'Avacado'){
+            console.log(fruits[i] + " found in Index : "+ i);
             break;
         }
         else{
