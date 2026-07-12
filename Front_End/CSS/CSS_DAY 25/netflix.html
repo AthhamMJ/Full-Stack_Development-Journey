@@ -46,15 +46,11 @@
     .main-image{
         display: flex;
         flex-direction: column;
-
         background-image: url(bat.jpg);
         background-size: cover;
+        background-position: center;
         height: 500px;
         width: 100%;
-        
-        position: absolute;
-        top: 0;
-
     }
     .svg-netflix{
         height: 60px;
@@ -83,8 +79,8 @@
         gap: 15px;
     }
     .button-watch, .button-addlist{
-        width: 100px;
-        height: 30px;
+        width: 120px;
+        height: 40px;
         background-color: red;
         border-radius: 28px;
         border: none;
@@ -101,6 +97,40 @@
         width: 10px;
         height: 10px;
         padding: 0px 10px;
+    }
+    .selection-row{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        position: relative;
+        top: 150px;
+    }
+    .selection-dot{
+        width: 50px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.5);
+
+        transition:
+            transform 0.3s ease,
+            background-color 1s ease;
+    }
+
+    .selection-dot:hover{
+        transform: scaleX(1.5);
+        background-color: rgb(255, 255, 255);
+    }
+
+    .trend-row{
+        display: flex;
+        position: relative;
+        top: 500px;
+        justify-content: center;
+        background-color: aliceblue;
+    }
+    .trend-item{
+        width: 20px;
+        height: 20px;
     }
 </style>
 <body>
@@ -129,6 +159,15 @@
                 <button class="button-addlist"><svg class="svg-button" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>plus</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-362.000000, -1037.000000)" fill="#ffffff"> <path d="M390,1049 L382,1049 L382,1041 C382,1038.79 380.209,1037 378,1037 C375.791,1037 374,1038.79 374,1041 L374,1049 L366,1049 C363.791,1049 362,1050.79 362,1053 C362,1055.21 363.791,1057 366,1057 L374,1057 L374,1065 C374,1067.21 375.791,1069 378,1069 C380.209,1069 382,1067.21 382,1065 L382,1057 L390,1057 C392.209,1057 394,1055.21 394,1053 C394,1050.79 392.209,1049 390,1049" id="plus" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>ADD LIST</button>
             </div>
         </div>
+        <div class="selection-row">
+            <div class="selection-dot"></div>
+            <div class="selection-dot"></div>
+            <div class="selection-dot"></div>
+        </div>
+    </div>
+    <br>
+    <div class="trend-row">
+        <svg class="trend-item" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2C7.28595 2 4.92893 2 3.46447 3.46447ZM13.75 10C13.75 10.4142 14.0858 10.75 14.5 10.75H15.1893L13.1768 12.7626C13.0791 12.8602 12.9209 12.8602 12.8232 12.7626L11.2374 11.1768C10.554 10.4934 9.44598 10.4934 8.76256 11.1768L6.46967 13.4697C6.17678 13.7626 6.17678 14.2374 6.46967 14.5303C6.76256 14.8232 7.23744 14.8232 7.53033 14.5303L9.82322 12.2374C9.92085 12.1398 10.0791 12.1398 10.1768 12.2374L11.7626 13.8232C12.446 14.5066 13.554 14.5066 14.2374 13.8232L16.25 11.8107V12.5C16.25 12.9142 16.5858 13.25 17 13.25C17.4142 13.25 17.75 12.9142 17.75 12.5V10C17.75 9.58579 17.4142 9.25 17 9.25H14.5C14.0858 9.25 13.75 9.58579 13.75 10Z" fill="#000000"></path> </g></svg>
     </div>
 </body>
 </html>
