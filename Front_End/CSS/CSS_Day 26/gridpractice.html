@@ -21,7 +21,8 @@
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        width: 220px;
+        width: 250px;
+        height: 1000px;
     }
     .container-main{
         display: flex;
@@ -29,8 +30,9 @@
         width: 100%;
         gap: 10px;
         background-color: aliceblue;
+        position: relative;
     }
-    .topic-box{
+    .topic-box, .logout{
         display: flex;
         margin-top: 10px;
         height: 35px;
@@ -40,11 +42,23 @@
         justify-content: center;
         align-items: center;
     }
+
+    .logout{
+        background-color: red;
+        font-weight: bold;
+        position: absolute;
+        bottom: 20px;
+    }
     .row1{
-        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        
         height: 100px;
         width: 100%;
         border-radius: 12px;
+        margin: 10px;
+
+        background-color: rgb(255, 255, 255);        
     }
     .row2{
         display: flex;
@@ -52,16 +66,30 @@
         justify-content: center;
     }
         .row2-col{
+            margin: 10px;
             background-color: rgb(255, 255, 255);
             height: 120px;
-            width: 200px;
+            width: 100%;
             border-radius: 12px;
         }
+        
     .row3{
-        background-color: white;
-        height: 100px;
-        border-radius: 12px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
     }
+        .row3-col1, .row3-col2{
+            margin: 10px;
+            background-color: rgb(255, 255, 255);
+            height: 300px;
+            width: 100%;
+            border-radius: 12px;
+            flex: 5;
+        }
+        .row3-col2{
+            flex: 1;
+        }
+
     .row4{
         background-color: white;
         height: 100px;
@@ -81,16 +109,22 @@
                 <div class="topic-box">Reports</div>
                 <div class="topic-box">Settings</div>
 
-                <div class="topic-box" style="background-color: red; margin-top: 300px;">Logout</div>
+                <div class="logout">Logout</div>
         </div>
 
         <div class="container-main">
             <div class="row1"></div>
+
             <div class="row2">
                 <div class="row2-col"></div>
                 <div class="row2-col"></div>
                 <div class="row2-col"></div>
                 <div class="row2-col"></div>
+            </div>
+
+            <div class="row3">
+                <div class="row3-col1"></div>
+                <div class="row3-col2"></div>
             </div>
         </div>
     </div>
