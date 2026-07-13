@@ -35,10 +35,16 @@
         padding: 0px 20px;
     }
     a{
+        display: inline-block;
         color: aliceblue;
         text-decoration: none;
-        padding: 0px 20px;
-        font-size: smaller;
+        padding: 0 20px;
+        transition: transform .25s ease, color .25s ease;
+    }
+
+    a:hover{
+        transform: translateY(-2px) scale(1.08);
+        color: rgb(255, 0, 0);
     }
     h4{
         color: aliceblue;
