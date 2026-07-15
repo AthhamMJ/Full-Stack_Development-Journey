@@ -53,10 +53,9 @@ function factorial(n){
 function reverse(n){
     let reverse = 0;
     //reversing the number
-    for(let digit; n > 0;){
+    for(let digit; n > 0; n = Math.floor(n / 10)){
         digit = n % 10;
         console.log(digit);
-        n = Math.floor(n / 10);
         reverse = reverse * 10 + digit
     }
     console.log(reverse);
