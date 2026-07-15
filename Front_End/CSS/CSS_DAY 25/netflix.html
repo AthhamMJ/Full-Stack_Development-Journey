@@ -14,7 +14,7 @@
         font-size: small;
     }
     body{
-        background-color: black;
+        background-color: rgb(0, 0, 0);
     }
     nav{
         display: flex;
@@ -30,9 +30,10 @@
         -webkit-backdrop-filter: blur(5px);
     }
     .svg-nav{
-        width: 10px;
-        height: 10px;
+        width: 15px;
+        height: 15px;
         padding: 0px 20px;
+        cursor: pointer;
     }
     a{
         display: inline-block;
@@ -51,26 +52,22 @@
     }
     .main-image{
         display: flex;
-        flex-direction: column;
-        background-image: url(bat.jpg);
+
+        background: url(bat.jpg);
+
         background-size: cover;
         background-position: center;
-        height: 500px;
-        width: 100%;
     }
     .svg-netflix{
         height: 60px;
         width: 200px;
-        position: absolute;
-        top: 0;
     }
     .contend{
         color: aliceblue;
         width: 500px;
         text-align: left;
-        position: relative;
-        top: 100px;
-        left: 100px;
+        margin-top: 100px;
+        margin-left: 100px;
         line-height: 50px;
     }
     span{
@@ -95,6 +92,18 @@
         box-shadow:
         inset 0 0.5px 0.5px rgba(255,255,255,0.5),
         inset 0 -0.5px 0.5px rgba(255, 255, 255, 0.2);
+
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .button-watch:hover{
+        background:#ff3030;
+        transform:translateY(-3px);
+    }
+
+    .button-addlist:hover{
+        background:#222;
+        transform:translateY(-3px);
     }
     .button-addlist{
         background-color: black;
@@ -109,34 +118,52 @@
         gap: 20px;
         justify-content: center;
         position: relative;
-        top: 150px;
+        bottom: 20px;
     }
     .selection-dot{
         width: 50px;
         height: 3px;
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 0.5);
-
+        cursor: pointer;
         transition:
             transform 0.3s ease,
             background-color 1s ease;
     }
 
     .selection-dot:hover{
-        transform: scaleX(1.5);
-        background-color: rgb(255, 255, 255);
+        transform:scaleX(1.8);
+        background:red;
     }
 
-    .trend-row{
-        display: flex;
-        position: relative;
-        top: 500px;
-        justify-content: center;
-        background-color: aliceblue;
+    .trend-header{
+        display:flex;
+        justify-content: space-between;
+        gap:20px;
+        margin:10px 20px;
     }
+
     .trend-item{
-        width: 20px;
-        height: 20px;
+        display:flex;
+        align-items:center;
+        gap:8px;
+        margin: 0px 20px;
+
+        translate: transform 1s ease-in-out;
+        cursor: pointer;
+    }
+
+    .trend-item svg{
+        width:25px;
+        height:25px;
+    }
+
+    .trend-item p{
+        margin:0;
+    }
+
+    .trend-item:hover{
+        transform: translateY(-4px) scale(1.5);  
     }
 </style>
 <body>
@@ -172,8 +199,19 @@
         </div>
     </div>
     <br>
-    <div class="trend-row">
-        <svg class="trend-item" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M3.46447 3.46447C2 4.92893 2 7.28595 2 12C2 16.714 2 19.0711 3.46447 20.5355C4.92893 22 7.28595 22 12 22C16.714 22 19.0711 22 20.5355 20.5355C22 19.0711 22 16.714 22 12C22 7.28595 22 4.92893 20.5355 3.46447C19.0711 2 16.714 2 12 2C7.28595 2 4.92893 2 3.46447 3.46447ZM13.75 10C13.75 10.4142 14.0858 10.75 14.5 10.75H15.1893L13.1768 12.7626C13.0791 12.8602 12.9209 12.8602 12.8232 12.7626L11.2374 11.1768C10.554 10.4934 9.44598 10.4934 8.76256 11.1768L6.46967 13.4697C6.17678 13.7626 6.17678 14.2374 6.46967 14.5303C6.76256 14.8232 7.23744 14.8232 7.53033 14.5303L9.82322 12.2374C9.92085 12.1398 10.0791 12.1398 10.1768 12.2374L11.7626 13.8232C12.446 14.5066 13.554 14.5066 14.2374 13.8232L16.25 11.8107V12.5C16.25 12.9142 16.5858 13.25 17 13.25C17.4142 13.25 17.75 12.9142 17.75 12.5V10C17.75 9.58579 17.4142 9.25 17 9.25H14.5C14.0858 9.25 13.75 9.58579 13.75 10Z" fill="#000000"></path> </g></svg>
+    <div class="trend-header">
+        <div class="trend-item" >
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#000000;} .st1{fill:#FFFFFF;} .st2{fill:#000000;} .st3{opacity:0.2;} .st4{fill:#231F20;} .st5{fill:#ffffff;} </style> <g id="Layer_1"> <g> <circle class="st0" cx="32" cy="32" r="32"></circle> </g> <g> <path class="st1" d="M29.1,44.5c-0.5,0-0.9-0.2-1.2-0.6L17.6,29.3l-7.8,5.2c-0.7,0.5-1.6,0.3-2.1-0.4c-0.5-0.7-0.3-1.6,0.4-2.1 l9-6c0.7-0.5,1.6-0.3,2.1,0.4L29,40.2l10.7-19.8c0.2-0.4,0.7-0.7,1.2-0.8c0.5,0,1,0.2,1.3,0.6l13,16.9c0.5,0.7,0.4,1.6-0.3,2.1 c-0.7,0.5-1.6,0.4-2.1-0.3l-11.6-15L30.4,43.7C30.2,44.2,29.7,44.5,29.1,44.5C29.2,44.5,29.2,44.5,29.1,44.5z"></path> </g> <g> <circle class="st2" cx="41" cy="23.1" r="4.4"></circle> </g> <g class="st3"> <g> <path class="st4" d="M29.1,46.5c-0.5,0-0.9-0.2-1.2-0.6L17.6,31.3l-7.8,5.2c-0.7,0.5-1.6,0.3-2.1-0.4c-0.5-0.7-0.3-1.6,0.4-2.1 l9-6c0.7-0.5,1.6-0.3,2.1,0.4L29,42.2l10.7-19.8c0.2-0.4,0.7-0.7,1.2-0.8c0.5,0,1,0.2,1.3,0.6l13,16.9c0.5,0.7,0.4,1.6-0.3,2.1 c-0.7,0.5-1.6,0.4-2.1-0.3l-11.6-15L30.4,45.7C30.2,46.2,29.7,46.5,29.1,46.5C29.2,46.5,29.2,46.5,29.1,46.5z"></path> </g> </g> <g> <path class="st1" d="M29.1,44.5c-0.5,0-0.9-0.2-1.2-0.6L17.6,29.3l-7.8,5.2c-0.7,0.5-1.6,0.3-2.1-0.4c-0.5-0.7-0.3-1.6,0.4-2.1 l9-6c0.7-0.5,1.6-0.3,2.1,0.4L29,40.2l10.7-19.8c0.2-0.4,0.7-0.7,1.2-0.8c0.5,0,1,0.2,1.3,0.6l13,16.9c0.5,0.7,0.4,1.6-0.3,2.1 c-0.7,0.5-1.6,0.4-2.1-0.3l-11.6-15L30.4,43.7C30.2,44.2,29.7,44.5,29.1,44.5C29.2,44.5,29.2,44.5,29.1,44.5z"></path> </g> <g class="st3"> <circle class="st4" cx="41" cy="25.1" r="4.4"></circle> </g> <g> <circle class="st5" cx="41" cy="23.1" r="4.4"></circle> </g> </g> <g id="Layer_2"> </g> </g></svg><p>Trends</p>
+        </div>
+        <div class="trend-item" >
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C16.4183 21 20 17.6439 20 13.504C20 9.76257 17.9654 6.83811 16.562 5.44436C16.3017 5.18584 15.8683 5.30006 15.7212 5.63288C14.9742 7.3229 13.4178 9.75607 11.4286 9.75607C10.1975 9.92086 8.31688 8.86844 9.83483 3.64868C9.97151 3.17868 9.46972 2.80113 9.08645 3.11539C6.9046 4.90436 4 8.51143 4 13.504C4 17.6439 7.58172 21 12 21Z" fill="#ffffff"></path> </g></svg><p>Popular</p>
+        </div>
+        <div class="trend-item" >
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg><p>Premiere</p>   
+        </div>
+        <div class="trend-item" >
+            <svg style="height: 20px; width: 20px;" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#ffffff" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>plus</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-362.000000, -1037.000000)" fill="#ffffff"> <path d="M390,1049 L382,1049 L382,1041 C382,1038.79 380.209,1037 378,1037 C375.791,1037 374,1038.79 374,1041 L374,1049 L366,1049 C363.791,1049 362,1050.79 362,1053 C362,1055.21 363.791,1057 366,1057 L374,1057 L374,1065 C374,1067.21 375.791,1069 378,1069 C380.209,1069 382,1067.21 382,1065 L382,1057 L390,1057 C392.209,1057 394,1055.21 394,1053 C394,1050.79 392.209,1049 390,1049" id="plus" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg><p>Recently Added</p>
+        </div>
     </div>
 </body>
 </html>
