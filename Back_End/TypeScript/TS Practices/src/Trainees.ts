@@ -1,4 +1,4 @@
-export class Student{
+export class Trainees{
     private sName : String;
     private sRegNo : String;
     private age : number;
