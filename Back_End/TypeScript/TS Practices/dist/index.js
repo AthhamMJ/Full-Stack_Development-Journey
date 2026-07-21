@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const motorBike_1 = require("./Inheritance/motorBike");
+const formulaone_1 = require("./MortorSports/formulaone");
 const Primary_1 = require("./School/Primary");
 const Secondary_1 = require("./School/Secondary");
 const Ternary_1 = require("./School/Ternary");
@@ -15,6 +16,7 @@ function main() {
     VehicleActivity();
     SchoolActivity();
     GeometricActivities();
+    MotorSport();
 }
 main();
 function VehicleActivity() {
@@ -38,8 +40,12 @@ function GeometricActivities() {
     const rectangle1 = new rectangle_1.Rectangle(12, 12, "Black", true);
     console.log(`Circle1 created on `, circle1.getDateCreated());
     console.log(`Area of The Circle is : `, circle1.getArea());
-    console.log(circle1.getCircle());
-    console.log(" ");
+    circle1.getCircle();
     console.log(`Area of Rectangle is : `, rectangle1.getArea());
     console.log(`Perimeter of Rectangle is : `, rectangle1.getPerimeter());
+    console.log(" ");
+}
+function MotorSport() {
+    const driver1 = new formulaone_1.FormulaOne("Formula FIA", "RedBull", "Max Verstappen", 29);
+    driver1.getDetails();
 }
