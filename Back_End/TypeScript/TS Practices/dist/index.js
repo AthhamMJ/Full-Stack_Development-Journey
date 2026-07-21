@@ -4,6 +4,8 @@ const motorBike_1 = require("./Inheritance/motorBike");
 const Primary_1 = require("./School/Primary");
 const Secondary_1 = require("./School/Secondary");
 const Ternary_1 = require("./School/Ternary");
+const circle_1 = require("./Shapes(07.21.2026)/circle");
+const rectangle_1 = require("./Shapes(07.21.2026)/rectangle");
 // import { Trainees } from "./Trainees";
 // let stu1 = new Students("Athham", "dr7", 20)
 // let stu2 = new Students("Charles", "dr16", 28)
@@ -12,6 +14,7 @@ const Ternary_1 = require("./School/Ternary");
 function main() {
     VehicleActivity();
     SchoolActivity();
+    GeometricActivities();
 }
 main();
 function VehicleActivity() {
@@ -28,4 +31,15 @@ function SchoolActivity() {
     stuP1.getDetailPrimary();
     stuS1.getDetailSecondary();
     stuT1.getDetailTernary();
+    console.log(" ");
+}
+function GeometricActivities() {
+    const circle1 = new circle_1.Cricle(7, "Red", true);
+    const rectangle1 = new rectangle_1.Rectangle(12, 12, "Black", true);
+    console.log(`Circle1 created on `, circle1.getDateCreated());
+    console.log(`Area of The Circle is : `, circle1.getArea());
+    console.log(circle1.getCircle());
+    console.log(" ");
+    console.log(`Area of Rectangle is : `, rectangle1.getArea());
+    console.log(`Perimeter of Rectangle is : `, rectangle1.getPerimeter());
 }

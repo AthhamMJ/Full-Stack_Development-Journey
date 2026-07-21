@@ -2,6 +2,9 @@ import { MotorBike } from "./Inheritance/motorBike";
 import { Primary } from "./School/Primary";
 import { Secondary } from "./School/Secondary";
 import { Ternary } from "./School/Ternary";
+import { Cricle } from "./Shapes(07.21.2026)/circle";
+import { GeometricObjects } from "./Shapes(07.21.2026)/geometricObjects";
+import { Rectangle } from "./Shapes(07.21.2026)/rectangle";
 // import { Trainees } from "./Trainees";
 
 // let stu1 = new Students("Athham", "dr7", 20)
@@ -14,6 +17,7 @@ import { Ternary } from "./School/Ternary";
 function main(){
     VehicleActivity();
     SchoolActivity();
+    GeometricActivities();
 }
 
 main();
@@ -33,4 +37,17 @@ function SchoolActivity(){
     stuP1.getDetailPrimary();
     stuS1.getDetailSecondary();
     stuT1.getDetailTernary();
+    console.log(" ");
+}
+
+function GeometricActivities(){
+    const circle1 = new Cricle(7, "Red", true);
+    const rectangle1 = new Rectangle(12, 12, "Black", true)
+    console.log(`Circle1 created on `, circle1.getDateCreated());
+    console.log(`Area of The Circle is : `, circle1.getArea());
+    console.log(circle1.getCircle());
+    console.log(" ");
+    console.log(`Area of Rectangle is : `, rectangle1.getArea());
+    console.log(`Perimeter of Rectangle is : `,rectangle1.getPerimeter());
+
 }
