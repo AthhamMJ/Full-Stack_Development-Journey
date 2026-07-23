@@ -5,160 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fuiro.io</title>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-
-        font-family: poppins;
-    }
-    nav{
-        padding: 10px;
-        display: flex;
-        
-        justify-content: space-between;
-        align-items: center;
-    }
-    a{
-        margin: 0px 10px;
-        font-size: small;
-        font-weight: 500;
-        color: black;
-        text-decoration: none;
-    }
-    svg{
-        padding: 0px 10px;
-        width: 20px;
-        height: 20px;
-    }
-    .account{
-        display: inline-flex;
-        width: 20px;
-        height: 20px;
-        border-radius: 100%;
-
-        background: url(./assets/img1.avif);
-        background-size: cover;
-    }
-
-    .search-bar{
-        padding: 1px 5px;
-
-        border-radius: 8px;
-        border: 0.25px solid black;
-    }
-    .input-search{
-        border: none;
-    }
-    .svg-search{
-        width: 10px;
-        height: 10px;
-    }
-    .container{
-        margin: 30px 10px;
-        display: flex;
-        justify-content: center;
-    }
-    .section1{
-        display: flex;
-        position: relative;
-
-        justify-content: center;
-        align-items: center;
-
-        width: 1250px;
-        height: 300px;
-
-        background-color: antiquewhite;
-    }
-    .box-section1{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        
-        width: 175px;
-        height: 200px;
-        border-radius: 8px;
-
-        background-color: white;
-        position: relative;
-        left: 30px;
-        z-index: 10;
-    }
-    .big-text{
-        margin: 10px 20px;
-        font-family: Arial;
-        font-size: large;
-        letter-spacing: 1px;
-        text-align: left;
-        font-weight: bold;
-    }
-    .small-text{
-        margin: 0px 20px;
-        text-align: left;
-        font-size: 10px;
-        
-        opacity: 70%;
-    }
-    .button{
-        margin: 15px;
-        padding: 0px 45px;
-
-        background-color: rgb(255, 94, 0);
-        border: none;
-        border-radius:5px;
-        color: white;
-        font-size: x-small;
-        width: fit-content;
-        height: 20px;
-    }
-    .image-section1{
-        width: 500px;
-        height: 250px;
-        border-radius: 8px;
-
-        background-size: cover;
-        background-image: url("assets/img1.avif");
-        position: relative;
-    }
-    .shop-store-link{
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-
-        width: 130px;
-        height: 60px;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.8);
-    }
-    h5{
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-    .smaller-text{
-        margin-left: 10px;
-
-        font-size: 8px;
-        opacity: 70%;
-    }
-    .price{
-        margin-left: 10px;
-        font-weight: 600;
-        font-size: 10px;
-    }
-    
-</style>
+<link rel="stylesheet" href="style.css">
 <body>
     <nav>
         <h3>Funio.</h3>
 
         <div>
-            <a href="#">Home</a>
-            <a href="#">Products</a>
-            <a href="#">Inspirations</a>
+            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="#">Inspirations</a>
         </div>
         <div class="search-bar">
             <svg class="svg-search" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
@@ -174,26 +29,145 @@
         </div>
     </nav>
 
-    <div class="container">
-        <div class="section1">
-            
-            <div class="box-section1">
-                <p class="big-text">High-Quality<br>Furniture<br>Just For You</p>
-                <P class="small-text">Our furniture is made from selected and best quality materials that are suitable for dream home</P>
-                <button class="button">Shop Now</button>
-            </div>
+    <div class="section1">
+        
+        <div class="box-section1">
+            <p class="big-text">High-Quality<br>Furniture<br>Just For You</p>                
+            <P class="small-text">Our furniture is made from selected and best quality materials that are suitable for dream home</P>
+            <button class="button">Shop Now</button>
+        </div>
 
-            <div class="image-section1">
-                <div class="shop-store-link">
-                    <h5>Bohuss</h5>
-                    <p class="smaller-text">Luxary big sofa 2-seat</p>
-                    <p class="price">Rs. 17,000,000</p>
-                </div>
+        <div class="image-section1">
+            <div class="shop-store-link">
+                <h5>Bohuss</h5>
+                <p class="smaller-text">Luxary big sofa 2-seat</p>
+                <p class="price">Rs. 17,000,000</p>
             </div>
-
-            
         </div>
     </div>
-        
+
+    <div>
+        <nav class="hype-row">
+            <div class="hype-row-matter">
+                <svg class="hype-row-svg" fill="#ffbb00" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg" stroke="#ffbb00"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M357.542 0H1562.46V119.181H1920V542.868C1920 655.236 1875.36 763.003 1795.91 842.46C1731.12 907.242 1647.52 948.879 1557.95 962.049C1544.78 1051.62 1503.15 1135.22 1438.36 1200C1360.45 1277.91 1255.32 1322.35 1145.33 1324.05V1496.31C1145.33 1510.38 1150.91 1523.87 1160.86 1533.81C1170.81 1543.76 1184.3 1549.35 1198.36 1549.35C1263.32 1549.35 1325.61 1575.15 1371.54 1621.08C1417.47 1667.01 1443.28 1729.31 1443.28 1794.26V1920H476.723V1794.26C476.723 1729.31 502.528 1667.01 548.458 1621.08C594.388 1575.15 656.682 1549.35 721.639 1549.35C735.705 1549.35 749.195 1543.76 759.14 1533.81C769.086 1523.87 774.674 1510.38 774.674 1496.31V1324.05C664.677 1322.35 559.547 1277.91 481.637 1200C416.854 1135.22 375.218 1051.62 362.048 962.049C272.477 948.879 188.877 907.242 124.095 842.46C44.6379 763.003 0 655.236 0 542.868V119.181H357.542V0ZM357.542 251.471H132.29V542.868C132.29 620.151 162.991 694.269 217.638 748.917C256.412 787.69 304.988 814.409 357.542 826.659V251.471ZM1562.46 826.659V251.471H1787.71V542.868C1787.71 620.151 1757.01 694.269 1702.36 748.917C1663.59 787.69 1615.01 814.409 1562.46 826.659ZM959.198 320L1034.59 564.21H1280L1081.1 715.79L1159.7 960L960.801 808.422L761.906 960L838.898 714.104L640 562.527H885.413L959.198 320Z"></path> </g></svg>
+                <div>
+                    <h5>High-Quality</h5>
+                    <p class="smaller-text">crafted from top materials</p>
+                </div>
+            </div>
+            <div class="hype-row-matter">
+                <svg class="hype-row-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="style=fill"> <g id="check-box"> <path id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M8 1.25C4.27208 1.25 1.25 4.27208 1.25 8L1.25 16C1.25 19.7279 4.27208 22.75 8 22.75L16 22.75C19.7279 22.75 22.75 19.7279 22.75 16L22.75 8C22.75 4.27208 19.7279 1.25 16 1.25L8 1.25ZM16.5303 10.0303C16.8232 9.73742 16.8232 9.26255 16.5303 8.96966C16.2374 8.67676 15.7626 8.67676 15.4697 8.96966L10.8434 13.5959C10.7458 13.6935 10.5875 13.6935 10.4899 13.5959L8.53033 11.6363C8.23744 11.3434 7.76256 11.3434 7.46967 11.6363C7.17678 11.9292 7.17678 12.4041 7.46967 12.697L9.42923 14.6565C10.1126 15.34 11.2207 15.34 11.9041 14.6565L16.5303 10.0303Z" fill="#00ff62"></path> </g> </g> </g></svg>
+                <div>
+                    <h5>Warrenty Protection</h5>
+                    <p class="smaller-text">over 2 years</p>
+                </div>
+            </div>
+            <div class="hype-row-matter">
+                <svg class="hype-row-svg" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#ff0000" stroke="#ff0000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="19.456"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#ff6600;} </style> <g> <path class="st0" d="M311.069,130.515c-0.963-5.641-5.851-9.768-11.578-9.768H35.43c-7.61,0-13.772,6.169-13.772,13.765 c0,7.61,6.162,13.772,13.772,13.772h64.263c7.61,0,13.772,6.17,13.772,13.773c0,7.603-6.162,13.772-13.772,13.772H13.772 C6.169,175.829,0,181.998,0,189.601c0,7.603,6.169,13.764,13.772,13.764h117.114c6.72,0,12.172,5.46,12.172,12.18 c0,6.72-5.452,12.172-12.172,12.172H68.665c-7.61,0-13.772,6.17-13.772,13.773c0,7.602,6.162,13.772,13.772,13.772h45.857 c6.726,0,12.179,5.452,12.179,12.172c0,6.719-5.453,12.172-12.179,12.172H51.215c-7.61,0-13.772,6.169-13.772,13.772 c0,7.603,6.162,13.772,13.772,13.772h87.014l5.488,31.042h31.52c-1.854,4.504-2.911,9.421-2.911,14.598 c0,21.245,17.218,38.464,38.464,38.464c21.237,0,38.456-17.219,38.456-38.464c0-5.177-1.057-10.094-2.911-14.598h100.04 L311.069,130.515z M227.342,352.789c0,9.146-7.407,16.553-16.553,16.553c-9.152,0-16.56-7.407-16.56-16.553 c0-6.364,3.627-11.824,8.892-14.598h15.329C223.714,340.965,227.342,346.424,227.342,352.789z"></path> <path class="st0" d="M511.598,314.072l-15.799-77.941l-57.689-88.759H333.074l32.534,190.819h38.42 c-1.846,4.504-2.904,9.421-2.904,14.598c0,21.245,17.219,38.464,38.456,38.464c21.246,0,38.464-17.219,38.464-38.464 c0-5.177-1.057-10.094-2.91-14.598h16.741c6.039,0,11.759-2.708,15.582-7.386C511.273,326.136,512.8,319.988,511.598,314.072z M392.529,182.882h26.314l34.162,52.547h-51.512L392.529,182.882z M456.14,352.789c0,9.146-7.407,16.553-16.56,16.553 c-9.138,0-16.552-7.407-16.552-16.553c0-6.364,3.635-11.824,8.892-14.598h15.329C452.513,340.965,456.14,346.424,456.14,352.789z"></path> </g> </g></svg>
+                <div>
+                    <h5>Free Shipping</h5>
+                    <p class="smaller-text">oeder over Rs. 150</p>
+                </div>
+            </div>
+            <div class="hype-row-matter">
+                <svg class="hype-row-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M14.581 19.4041C14.6645 19.9894 14.2606 20.5326 13.676 20.6211L12 20.9841C11.6307 21.1187 11.2169 21.0265 10.9398 20.7477C10.6627 20.469 10.5729 20.0546 10.7097 19.6861C10.8466 19.3176 11.1851 19.0623 11.577 19.0321L13.252 18.6701C13.8213 18.509 14.4142 18.8364 14.581 19.4041V19.4041Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M7 15.9919C5.89543 15.9919 5 15.0965 5 13.9919V10.9919C5 9.88737 5.89543 8.99194 7 8.99194C8.10457 8.99194 9 9.88737 9 10.9919V13.9919C9 15.0965 8.10457 15.9919 7 15.9919Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M17 15.9919C15.8954 15.9919 15 15.0965 15 13.9919V10.9919C15 9.88737 15.8954 8.99194 17 8.99194C18.1046 8.99194 19 9.88737 19 10.9919V13.9919C19 15.0965 18.1046 15.9919 17 15.9919Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M18.25 11C18.25 11.4142 18.5858 11.75 19 11.75C19.4142 11.75 19.75 11.4142 19.75 11H18.25ZM4.25 11C4.25 11.4142 4.58579 11.75 5 11.75C5.41421 11.75 5.75 11.4142 5.75 11H4.25ZM19.75 14.0023C19.7513 13.5881 19.4165 13.2513 19.0023 13.25C18.5881 13.2487 18.2513 13.5835 18.25 13.9977L19.75 14.0023ZM13.5113 19.8951C13.1071 19.9855 12.8527 20.3865 12.9431 20.7907C13.0335 21.1949 13.4345 21.4493 13.8387 21.3589L13.5113 19.8951ZM19.75 11V9H18.25V11H19.75ZM19.75 9C19.75 4.71979 16.2802 1.25 12 1.25V2.75C15.4518 2.75 18.25 5.54822 18.25 9H19.75ZM12 1.25C7.71979 1.25 4.25 4.71979 4.25 9H5.75C5.75 5.54822 8.54822 2.75 12 2.75V1.25ZM4.25 9V11H5.75V9H4.25ZM18.25 13.9977C18.2414 16.8289 16.2742 19.2771 13.5113 19.8951L13.8387 21.3589C17.2853 20.588 19.7393 17.534 19.75 14.0023L18.25 13.9977Z" fill="#000000"></path> </g></svg>
+                <div>
+                    <h5>24 / 7 Service</h5>
+                    <p class="smaller-text">oeder over Rs. 150</p>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div class="section1 section-divider">
+        <div class="content-section2">
+            <p class="big-text">50 + Beautiful Rooms<br>Inspiration</p>
+            <p class="small-text">Our Designer already made a lot of beautiful prototype<br>of room that inspire you</p>
+            <button class="button">Explore More</button>
+        </div>
+
+        <div class="image-section2"></div>
+        <div class="image2-section2"></div>
+    </div>
+
+    <div class="section3-header">
+        <p class="big-text">Tips & Tricks</p>    
+        <div class="section3">
+            <div class="section3-content">
+                <div class="section3-image1"></div>
+                <p class="big-text-section3">How to Create a living room to love</p>
+                <p class="small-text-section3">20 jan 2020</p>
+            </div>
+
+            <div class="section3-content">
+                <div class="section3-image2"></div>
+                <p class="big-text-section3">Solution for clean look working place</p>
+                <p class="small-text-section3">10 jan 2020</p>
+            </div>
+
+            <div class="section3-content">
+                <div class="section3-image3"></div>
+                <p class="big-text-section3">Make your Cooking Activity more fun with good setup</p>
+                <p class="small-text-section3">20 jan 2020</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section3-header">
+        <p class="small-text">Share your Setup with</p>
+        <p class="big-text">Furnio Furniture</p>
+        <div class="section4">
+            <div class="section4-row1">
+                <div class="section4-row1-col1">
+                    <div class="section4-row1-col1-flex1"></div>
+                    <div class="section4-row1-col1-flex2"></div>
+                </div>
+                <div class="section4-row1-col2"></div>
+                <div class="section4-row1-col3"></div>
+                <div class="section4-row1-col4">
+                    <div class="section4-row1-col4-flex1"></div>
+                    <div class="section4-row1-col4-flex2"></div>
+                </div>
+            </div>
+            <div class="section4-row2">
+                <div class="section4-row2-col1"></div>
+                <div class="section4-row2-col2"></div>
+                <div class="section4-row2-col3"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="footer-nav">
+            <ul>
+                <li><h3>Furnio.</h3></li>
+                <li><a class="small-text-section3">World wide furniture store since 2020<br>over 10000+ branded products in our websites</p></li>
+                <li><a class="small-text-section3">Srilanka</a></li>
+                <li><a class="small-text-section3">0771234567</a></li>
+                <li><a class="small-text-section3">www.furio.com</a></li>
+            </ul>
+            <ul>
+                <li><h5 class="h5-footer">Menu</h5></li>
+                <li><a class="small-text-section3">Products</a></li>
+                <li><a class="small-text-section3">Rooms</a></li>
+                <li><a class="small-text-section3">Inspirations</a></li>
+                <li><a class="small-text-section3">About Us</a></li>
+                <li><a class="small-text-section3">Terms & Policy</a></li>
+            </ul>
+            <ul>
+                <li><h5 class="h5-footer">Account</h5></li>
+                <li><a class="small-text-section3">My Account</a></li>
+                <li><a class="small-text-section3">Checkout</a></li>
+                <li><a class="small-text-section3">My Cart</a></li>
+                <li><a class="small-text-section3">My Catalog</a></li>
+            </ul>
+            <ul>
+                <li><h5 class="h5-footer">Stay Connected</h5></li>
+                <li><a class="small-text-section3">Fackebook</a></li>
+                <li><a class="small-text-section3">Instagram</a></li>
+                <li><a class="small-text-section3">Twitter</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>
