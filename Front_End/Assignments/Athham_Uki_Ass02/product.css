@@ -28,6 +28,7 @@
         padding: 0px 10px;
         width: 20px;
         height: 20px;
+        cursor: pointer;
     }
     .account{
         display: inline-flex;
@@ -47,6 +48,11 @@
 
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.5);
+
+        transition:scale .25s ease;
+    }
+    .search-bar:hover{
+        transform: scale(1.02);
     }
     .input-search{
         border: none;
@@ -405,6 +411,12 @@ hr{
     height:275px;
 
     border-radius:12px;
+
+    transition: background-color scale .25s ease linear;
+}
+.product-box:hover{
+    background-color:rgba(255, 136, 0, 0.8);
+    transform: scale(1.02);
 }
 .product-image{
     flex: 3;
@@ -452,8 +464,25 @@ hr{
 
     color: white;
     border-radius: 10px;
-    background-color: rgba(255, 136, 0, 0.75);
+    background-color: rgba(255, 136, 0, 0.5);
 
     height: 40px;
     width: 50px;
+
+    transition: background-color scale .25s ease;
+}
+.pagination-box:hover{
+    background-color:rgba(255, 136, 0, 0.8);
+    transform: scale(1.02);
+}
+.button-email{
+    padding: 10px;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+hr{
+    width: 100%;
+    font-weight: 600;
 }

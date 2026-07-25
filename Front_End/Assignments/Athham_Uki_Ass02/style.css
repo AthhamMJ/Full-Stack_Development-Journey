@@ -25,9 +25,15 @@
         transform: translateX(-2px) scale(1.05);
     }
     svg{
+        cursor: pointer;
         padding: 0px 10px;
         width: 20px;
         height: 20px;
+
+        transition: .25s transform ease;
+    }
+    .svg:hover{
+        transform: translateX(-2px) scale(1.05);
     }
     .account{
         display: inline-flex;
@@ -43,10 +49,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 1px 5px;
+        padding: 3px 10px;
 
-        border-radius: 8px;
-        border: 0.25px solid black;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+
+        transition:scale .25s ease;
+    }
+    .search-bar:hover{
+        transform: scale(1.02);
     }
     .input-search{
         border: none;
@@ -257,12 +268,19 @@
         align-items: center;
         margin-top: 200px;
     }
+    .section4-container{
+        display: flex;
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+    }
     .section4{
         display: flex;
         flex-wrap: wrap;
 
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
 
         width: 100%;
         height: fit-content;
@@ -358,4 +376,15 @@ ul{
 }
 a{
     cursor: pointer;
+}
+.button-email{
+    padding: 10px;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+hr{
+    width: 100%;
+    font-weight: 600;
 }
