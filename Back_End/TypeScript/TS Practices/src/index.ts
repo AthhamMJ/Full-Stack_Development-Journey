@@ -1,5 +1,7 @@
 import { MotorBike } from "./Inheritance/motorBike";
+import { Endurance } from "./MortorSports/endurance";
 import { FormulaOne } from "./MortorSports/formulaone";
+import { Motorsport } from "./MortorSports/motorsport";
 import { Primary } from "./School/Primary";
 import { Secondary } from "./School/Secondary";
 import { Ternary } from "./School/Ternary";
@@ -57,5 +59,11 @@ function GeometricActivities(){
 
 function MotorSport(){
     const driver1 = new FormulaOne("Formula FIA", "RedBull", "Max Verstappen", 29);
+    const driver2 = new FormulaOne("Formula FIA", "Ferrari", "Charles Leclerc", 28);
+    const driver3 = new Endurance("Endurance FIA", "MercedesAMG", "Max Verstappen", 28);
+    const driver4 : Motorsport = new Endurance("GT3", "Aero-G", "Athham Janooz", 20);
+    driver4.getGenre(); 
     driver1.getDetails();
+    driver2.getDetails();
+    driver3.getDetails();
 }

@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const motorBike_1 = require("./Inheritance/motorBike");
+const endurance_1 = require("./MortorSports/endurance");
 const formulaone_1 = require("./MortorSports/formulaone");
 const Primary_1 = require("./School/Primary");
 const Secondary_1 = require("./School/Secondary");
@@ -47,5 +48,11 @@ function GeometricActivities() {
 }
 function MotorSport() {
     const driver1 = new formulaone_1.FormulaOne("Formula FIA", "RedBull", "Max Verstappen", 29);
+    const driver2 = new formulaone_1.FormulaOne("Formula FIA", "Ferrari", "Charles Leclerc", 28);
+    const driver3 = new endurance_1.Endurance("Endurance FIA", "MercedesAMG", "Max Verstappen", 28);
+    const driver4 = new endurance_1.Endurance("GT3", "Aero-G", "Athham Janooz", 20);
+    driver4.getGenre();
     driver1.getDetails();
+    driver2.getDetails();
+    driver3.getDetails();
 }
