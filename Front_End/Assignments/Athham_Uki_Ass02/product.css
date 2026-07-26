@@ -369,13 +369,11 @@ a{
     cursor: pointer;
 }
 .button-email{
-    background-color: rgb(255, 94, 0);
-    border: none;
-    border-radius:5px;
-    color: white;
-    font-size: x-small;
-    width: 40px;
-    height: 20px;
+    padding: 10px;
+    background-color: rgb(255, 153, 0);
+
+    width: fit-content;
+    height: fit-content;
 }
 hr{
     margin: 5px 0px;

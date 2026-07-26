@@ -61,6 +61,7 @@
     }
     .input-search{
         border: none;
+        outline: none;
     }
     .svg-search{
         width: 10px;
@@ -379,6 +380,7 @@ a{
 }
 .button-email{
     padding: 10px;
+    background-color: rgb(255, 153, 0);
 
     width: fit-content;
     height: fit-content;
