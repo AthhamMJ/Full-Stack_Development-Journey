@@ -2,6 +2,7 @@ import { BankAccount } from "./BankAccount";
 
 export class CurrentAccount extends BankAccount{
     private static readonly odLimit = 5000;
+    private static readonly intrestRate = 0.02;
 
     constructor(accountNumber : String, holderName : String, balance : number){
         super(accountNumber, holderName, balance);
@@ -9,8 +10,8 @@ export class CurrentAccount extends BankAccount{
     }
 
     public override withdraw(amount: number): void {
-        if(this.balance - amount < SavingsAccount.odLimit){
-            console.log(`Withdral Denied. Savings Account must be maintained a minimum balance of $ ${SavingsAccount.minBalance}`);
+        if(this.balance - amount < CurrentAccount.odLimit){
+            console.log(`Withdral Denied. Savings Account must be maintained a minimum balance of $ ${CurrentAccount.odLimit}`);
             return;
         }
         else{
@@ -19,7 +20,7 @@ export class CurrentAccount extends BankAccount{
     }
 
     public override applyMonthlyUpdate(): void {
-        const intrest = this.balance * SavingsAccount.intrestRate;
+        const intrest = this.balance * CurrentAccount.intrestRate;
         this.balance += intrest;
         console.log(`The intrest of amount is $ ${intrest}. And the new Balance is ${this.balance}`);
     }
