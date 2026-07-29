@@ -5,7 +5,7 @@ export class SavingsAccount extends BankAccount{
     private static readonly minBalance = 1000;
     private static readonly intrestRate = 0.02;
 
-    constructor(accountNumber : String, holderName : String, balance : number){
+    constructor(accountNumber : string, holderName : string, balance : number){
         super(accountNumber, holderName, balance);
         console.log("Savings Account Created Succesfully");
     }
@@ -16,7 +16,8 @@ export class SavingsAccount extends BankAccount{
             return;
         }
         else{
-            super.withdraw(amount);
+            this.balance -= amount;
+            console.log(`Withdraw Rs.${amount}. New Balance is ${this.balance}`);
         }
     }
 

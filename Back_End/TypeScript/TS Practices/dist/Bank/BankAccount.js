@@ -32,7 +32,7 @@ class BankAccount {
             console.log("Withdraw Ammount Should Be Positive");
             return;
         }
-        if (amount < this.balance) {
+        if (amount > this.balance) {
             console.log(`Insufficient Balance`);
             return;
         }

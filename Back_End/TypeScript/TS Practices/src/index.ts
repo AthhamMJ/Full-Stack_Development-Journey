@@ -1,3 +1,5 @@
+import { Bank } from "./Bank/main";
+import { HospitalApp } from "./Hospital/App";
 import { MotorBike } from "./Inheritance/motorBike";
 import { Endurance } from "./MortorSports/endurance";
 import { FormulaOne } from "./MortorSports/formulaone";
@@ -22,6 +24,8 @@ function main(){
     SchoolActivity();
     GeometricActivities();
     MotorSport();
+    Bank_Function();
+    Hospital_Function();
 }
 
 main();
@@ -66,4 +70,16 @@ function MotorSport(){
     driver1.getDetails();
     driver2.getDetails();
     driver3.getDetails();
+    console.log(" ");
+}
+
+function Bank_Function():void{
+    const bankMain = new Bank();
+    bankMain.bankmainX();
+    console.log("");
+}
+
+function Hospital_Function(): void{
+    const Hospital_object = new HospitalApp();
+    Hospital_object.hospitalmain();
 }

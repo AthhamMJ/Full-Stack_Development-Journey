@@ -2,26 +2,28 @@ import { BankAccount } from "./BankAccount";
 
 export class CurrentAccount extends BankAccount{
     private static readonly odLimit = 5000;
-    private static readonly intrestRate = 0.02;
 
-    constructor(accountNumber : String, holderName : String, balance : number){
+    constructor(accountNumber : string, holderName : string, balance : number){
         super(accountNumber, holderName, balance);
-        console.log("Savings Account Created Succesfully");
     }
 
     public override withdraw(amount: number): void {
-        if(this.balance - amount < CurrentAccount.odLimit){
-            console.log(`Withdral Denied. Savings Account must be maintained a minimum balance of $ ${CurrentAccount.odLimit}`);
+        if(this.balance - amount < -CurrentAccount.odLimit){
+            console.log(`Withdral Denied. Current Account have an OD as minimum ${CurrentAccount.odLimit}`);
             return;
         }
         else{
-            super.withdraw(amount);
+            this.balance -= amount;
+            console.log(`Withdraw Rs.${amount}. New Balance is ${this.balance}`);
         }
     }
 
     public override applyMonthlyUpdate(): void {
-        const intrest = this.balance * CurrentAccount.intrestRate;
-        this.balance += intrest;
-        console.log(`The intrest of amount is $ ${intrest}. And the new Balance is ${this.balance}`);
+        if(this.balance < 0){
+            console.log(`CurrentAccount overdrawn by ${Math.abs(this.balance)}. No interest Applied`);
+        }
+        else{
+            console.log(`No interest for current accounts. Balance remains ${this.balance}.`)
+        }
     }
 }

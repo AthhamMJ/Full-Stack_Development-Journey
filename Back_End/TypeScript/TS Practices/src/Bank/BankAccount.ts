@@ -1,18 +1,18 @@
 export class BankAccount{
-    private accountNumber : String;
-    private holderName : String;
+    private accountNumber : string;
+    private holderName : string;
     protected balance : number;
 
-    constructor(accountNumber : String, holderName : String, balance : number){ 
+    constructor(accountNumber : string, holderName : string, balance : number){ 
         this.accountNumber = accountNumber;
         this.holderName = holderName;
         this.balance = balance;
     }
-    public getAccountNumber() : String{
+    public getAccountNumber() : string{
         return this.accountNumber;
     }
 
-    public getHolderName() : String{
+    public getHolderName() : string{
         return this.holderName;
     }
 
@@ -34,7 +34,7 @@ export class BankAccount{
             console.log("Withdraw Ammount Should Be Positive");
             return;
         }
-        if(amount < this.balance){
+        if(amount > this.balance){
             console.log(`Insufficient Balance`);
             return;
         }

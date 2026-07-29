@@ -15,7 +15,8 @@ class SavingsAccount extends BankAccount_1.BankAccount {
             return;
         }
         else {
-            super.withdraw(amount);
+            this.balance -= amount;
+            console.log(`Withdraw Rs.${amount}. New Balance is ${this.balance}`);
         }
     }
     applyMonthlyUpdate() {

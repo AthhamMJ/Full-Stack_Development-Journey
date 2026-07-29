@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const main_1 = require("./Bank/main");
+const App_1 = require("./Hospital/App");
 const motorBike_1 = require("./Inheritance/motorBike");
 const endurance_1 = require("./MortorSports/endurance");
 const formulaone_1 = require("./MortorSports/formulaone");
@@ -18,6 +20,8 @@ function main() {
     SchoolActivity();
     GeometricActivities();
     MotorSport();
+    Bank_Function();
+    Hospital_Function();
 }
 main();
 function VehicleActivity() {
@@ -55,4 +59,14 @@ function MotorSport() {
     driver1.getDetails();
     driver2.getDetails();
     driver3.getDetails();
+    console.log(" ");
+}
+function Bank_Function() {
+    const bankMain = new main_1.Bank();
+    bankMain.bankmainX();
+    console.log("");
+}
+function Hospital_Function() {
+    const Hospital_object = new App_1.HospitalApp();
+    Hospital_object.hospitalmain();
 }
