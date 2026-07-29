@@ -81,6 +81,9 @@
         height: 350px;
 
         background-color: antiquewhite;
+        background-image: url(./assets/img23.avif);
+        background-blend-mode: overlay;
+        background-size: cover;
     }
     .box-section1{
         display: flex;
@@ -405,7 +408,7 @@ hr{
     cursor: pointer;
     flex-direction:column;
 
-    width:200px;
+    width:210px;
     height:275px;
 
     border-radius:12px;
@@ -441,7 +444,7 @@ hr{
     padding: 0px 30px;
 }
 .small-text-product{
-    font-size: smaller;
+    font-size: 12px;
     opacity: 50%;
     padding: 0px 30px;
 }
