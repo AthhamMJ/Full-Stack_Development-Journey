@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const main_1 = require("./Bank/main");
+const main_1 = require("./BankCopy/main");
+const Race_1 = require("./FIA/Race");
 const App_1 = require("./Hospital/App");
 const motorBike_1 = require("./Inheritance/motorBike");
 const endurance_1 = require("./MortorSports/endurance");
@@ -20,8 +21,9 @@ function main() {
     SchoolActivity();
     GeometricActivities();
     MotorSport();
-    Bank_Function();
     Hospital_Function();
+    Bank_Function();
+    Formula_One();
 }
 main();
 function VehicleActivity() {
@@ -61,12 +63,22 @@ function MotorSport() {
     driver3.getDetails();
     console.log(" ");
 }
-function Bank_Function() {
-    const bankMain = new main_1.Bank();
-    bankMain.bankmainX();
-    console.log("");
-}
+// function Bank_Function():void{
+//     const bankMain = new Bank();
+//     bankMain.bankmainX();
+//     console.log("");
+// }
 function Hospital_Function() {
     const Hospital_object = new App_1.HospitalApp();
     Hospital_object.hospitalmain();
+    console.log("");
+}
+function Bank_Function() {
+    const Bank = new main_1.BankApp();
+    Bank.BankRun();
+    console.log(" ");
+}
+function Formula_One() {
+    const Monza = new Race_1.RaceTelemetry();
+    Monza.startRaceWeekend();
 }

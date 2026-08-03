@@ -1,4 +1,5 @@
-import { Bank } from "./Bank/main";
+import { BankApp } from "./BankCopy/main";
+import { RaceTelemetry } from "./FIA/Race";
 import { HospitalApp } from "./Hospital/App";
 import { MotorBike } from "./Inheritance/motorBike";
 import { Endurance } from "./MortorSports/endurance";
@@ -24,8 +25,9 @@ function main(){
     SchoolActivity();
     GeometricActivities();
     MotorSport();
-    Bank_Function();
     Hospital_Function();
+    Bank_Function();
+    Formula_One();
 }
 
 main();
@@ -73,13 +75,25 @@ function MotorSport(){
     console.log(" ");
 }
 
-function Bank_Function():void{
-    const bankMain = new Bank();
-    bankMain.bankmainX();
-    console.log("");
-}
+// function Bank_Function():void{
+//     const bankMain = new Bank();
+//     bankMain.bankmainX();
+//     console.log("");
+// }
 
 function Hospital_Function(): void{
     const Hospital_object = new HospitalApp();
     Hospital_object.hospitalmain();
+    console.log("");
+}
+
+function Bank_Function():void{
+    const Bank = new BankApp();
+    Bank.BankRun();
+    console.log(" ");
+}
+
+function Formula_One() :void{
+    const Monza = new RaceTelemetry();
+    Monza.startRaceWeekend();
 }
