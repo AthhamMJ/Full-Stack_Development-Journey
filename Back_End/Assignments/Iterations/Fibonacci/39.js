@@ -1,9 +1,16 @@
 function main(){
-    square(100);
-}
-function square(number){
-    for(let n = 1; n <= number; n++){
-        console.log(n*n);
-    }
+    fibonacci()
 }
 main();
+
+function fibonacci(){
+    let previous = 0;
+    let current = 1;
+    let next = 0;
+    for(let i = 1; i < 20; i++){
+        console.log(previous);
+        next = previous + current;
+        previous = current;
+        current = next;
+    }
+}
