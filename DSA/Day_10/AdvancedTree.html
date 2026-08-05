@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Growing Procedural Tree</title>
+
+<style>
+html,body{
+    margin:0;
+    overflow:hidden;
+    background:#08140d;
+}
+canvas{
+    display:block;
+}
+</style>
+
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<script>
+
+const canvas=document.getElementById("canvas");
+const ctx=canvas.getContext("2d");
+
+canvas.width=window.innerWidth;
+canvas.height=window.innerHeight;
+
+const GROW_TIME=10000;
+const MAX_DEPTH=11;
+
+const branches=[];
+
+class Branch{
+
+    constructor(x,y,length,angle,depth){
+
+        this.x=x;
+        this.y=y;
+
+        this.length=length;
+        this.angle=angle;
+
+        this.depth=depth;
+
+        this.progress=0;
+
+        this.childrenCreated=false;
+    }
+
+    update(dt){
+
+        this.progress+=dt*0.0008;
+
+        if(this.progress>1)
+            this.progress=1;
+
+        if(this.progress===1 &&
+           !this.childrenCreated &&
+           this.depth<MAX_DEPTH){
+
+            this.childrenCreated=true;
+
+            let nx=this.x+Math.cos(this.angle)*this.length;
+            let ny=this.y+Math.sin(this.angle)*this.length;
+
+            let shrink=0.75;
+
+            let spread=0.35+Math.random()*0.25;
+
+            branches.push(
+                new Branch(
+                    nx,
+                    ny,
+                    this.length*shrink,
+                    this.angle-spread,
+                    this.depth+1
+                )
+            );
+
+            branches.push(
+                new Branch(
+                    nx,
+                    ny,
+                    this.length*shrink,
+                    this.angle+spread,
+                    this.depth+1
+                )
+            );
+
+            if(Math.random()>0.45){
+
+                branches.push(
+                    new Branch(
+                        nx,
+                        ny,
+                        this.length*0.65,
+                        this.angle+(Math.random()-0.5)*0.4,
+                        this.depth+1
+                    )
+                );
+
+            }
+
+        }
+
+    }
+
+    draw(){
+
+        let x2=this.x+
+               Math.cos(this.angle)*
+               this.length*
+               this.progress;
+
+        let y2=this.y+
+               Math.sin(this.angle)*
+               this.length*
+               this.progress;
+
+        ctx.beginPath();
+        ctx.moveTo(this.x,this.y);
+        ctx.lineTo(x2,y2);
+
+        ctx.lineWidth=Math.max(1,(MAX_DEPTH-this.depth)*0.7);
+
+        ctx.strokeStyle=`rgb(${110-this.depth*3},70,30)`;
+
+        ctx.stroke();
+
+        if(this.depth===MAX_DEPTH &&
+           this.progress===1){
+
+            ctx.beginPath();
+            ctx.arc(x2,y2,4,0,Math.PI*2);
+
+            ctx.fillStyle=
+            `hsl(${100+Math.random()*30},70%,55%)`;
+
+            ctx.fill();
+
+        }
+
+    }
+
+}
+
+branches.push(
+    new Branch(
+        canvas.width/2,
+        canvas.height,
+        120,
+        -Math.PI/2,
+        0
+    )
+);
+
+let previous=performance.now();
+let start=performance.now();
+
+function animate(now){
+
+    let dt=now-previous;
+    previous=now;
+
+    ctx.fillStyle="#08140d";
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+
+    for(const b of branches){
+
+        b.update(dt);
+        b.draw();
+
+    }
+
+    if(now-start<GROW_TIME){
+
+        requestAnimationFrame(animate);
+
+    }else{
+
+        // Continue drawing the completed tree
+        ctx.fillStyle="#08140d";
+        ctx.fillRect(0,0,canvas.width,canvas.height);
+
+        for(const b of branches)
+            b.draw();
+
+    }
+
+}
+
+requestAnimationFrame(animate);
+
+</script>
+
+</body>
+</html>

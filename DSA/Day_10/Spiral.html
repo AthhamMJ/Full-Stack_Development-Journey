@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Growing Fibonacci Sunflower</title>
+
+<style>
+html,body{
+    margin:0;
+    overflow:hidden;
+    background:#08140d;
+}
+
+canvas{
+    display:block;
+}
+</style>
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<script>
+
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+
+canvas.width = innerWidth;
+canvas.height = innerHeight;
+
+const cx = canvas.width / 2;
+const cy = canvas.height / 2;
+
+const GOLDEN_ANGLE = Math.PI * (3 - Math.sqrt(5)); // 137.507°
+const MAX_SEEDS = 2200;
+
+let seed = 0;
+
+function drawSeed(n){
+
+    // Spiral radius
+    const r = 5 * Math.sqrt(n);
+
+    // Fibonacci angle
+    const theta = n * GOLDEN_ANGLE;
+
+    const x = cx + Math.cos(theta) * r;
+    const y = cy + Math.sin(theta) * r;
+
+    // Seed size gradually shrinks
+    const radius = Math.max(1.5, 5 - r / 250);
+
+    // Nice sunflower gradient
+    const hue = 45 + r * 0.03;
+
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2);
+
+    ctx.fillStyle = `hsl(${hue},90%,55%)`;
+    ctx.fill();
+}
+
+function animate(){
+
+    ctx.fillStyle = "#08140d";
+    ctx.fillRect(0,0,canvas.width,canvas.height);
+
+    // Grow several seeds each frame
+    for(let i=0;i<6 && seed<MAX_SEEDS;i++){
+        drawSeed(seed++);
+    }
+
+    // redraw existing seeds
+    for(let i=0;i<seed;i++){
+        drawSeed(i);
+    }
+
+    if(seed<MAX_SEEDS)
+        requestAnimationFrame(animate);
+
+}
+
+animate();
+
+</script>
+
+</body>
+</html>
