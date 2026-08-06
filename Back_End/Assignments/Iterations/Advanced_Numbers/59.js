@@ -1,12 +1,15 @@
-function DtoB(num){
-    let binary = new Array(); 
-    for(let div = 2; num > 0; num = Math.floor(num / div)){
-        binary.push(num % div)
-    }
-    console.log(binary.reverse())
-    let convert = new Array();
-    // for(let count = 0; count < binary.length; count+=4){
-    //     console.log((binary.slice(count, count + 4));
-    // }
+function BtoD(num){
+    let n = num;
+    let count = 0;
+        for(;n > 0; n = Math.floor(n/10)){
+            count++;
+        }
+        console.log(count);
+        let decimal = 0;
+        for(let position = 0; position < count; position++){
+            decimal += (num % 10) * Math.pow(2, position);
+            num = Math.floor(num/10);
+        }
+        console.log(decimal);
 }
-DtoB(8);
+BtoD(1111);
