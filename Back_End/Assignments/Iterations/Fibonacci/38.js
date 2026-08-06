@@ -1,10 +1,10 @@
 function main(){
-    Cubes(10)
+    Squares(10)
 }
 
-function Cubes(n){
+function Squares(n){
     for(let i = 1; i <= n; i++){
-        console.log(i*i*i);
+        console.log(i*i);
     }
 }
 
