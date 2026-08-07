@@ -54,7 +54,7 @@
         border-radius: 10px;
         border: 1px solid rgba(0, 0, 0, 0.5);
 
-        transition:scale .25s ease;
+        transition:scale .5s ease;
     }
     .search-bar:hover{
         transform: scale(1.02);
