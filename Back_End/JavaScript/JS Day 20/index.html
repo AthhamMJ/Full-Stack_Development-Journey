@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Do List</title>
+    <style>
+        body{
+            display: flex;
+            margin: 40px;
+
+
+            font-family: sans-serif;
+            background-color: aliceblue;
+            color: rgb(15, 22, 27);
+        }
+        h2{
+            color: red;
+        }
+        button{
+            margin: 10px 0px;
+        }
+        ul{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+
+            padding: 8px;
+        }
+        .border{
+            display: flex;
+            flex-direction: column;
+
+            width: 500px;
+            padding: 40px 20px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 18px;
+            
+            box-shadow:
+            0 2px 6px rgba(0, 0, 0, 0.08),
+            0 8px 20px rgba(0, 0, 0, 0.05);
+        }
+        .done{
+            text-decoration: line-through;
+            color: grey;
+        }
+        input{
+            padding: 10px;
+            border: 1px solid orange;
+            border-radius: 28px;
+        }
+        button{
+            width: 70px;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 28px;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+        }
+        .deleteBtn{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+        <h2>Don't Do List</h2>
+        <form id="ddl">
+            <input type="text" id="ddinput" placeholder="Add your tasks..." required>
+            <button type="submit" style="background-color: green;">Add</button>
+            <button type="reset" style="background-color: red;">Remove</button>
+        </form>
+
+        <ul id="dd-ul">
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

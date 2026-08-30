@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json.learn.com</title>
+    <style>
+        *{
+            margin: 10px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="para"></p>
+</body>
+<script>
+    fetch("./key.json")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data[0].name); // Adam
+        console.log(data[1].name); // John
+        console.log(data[2].name); // Sarah
+    });
+</script>
+
+</html>
