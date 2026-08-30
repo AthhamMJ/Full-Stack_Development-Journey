@@ -1,0 +1,1 @@
+{"version":3,"file":"vehicle.js","sourceRoot":"","sources":["../../src/Inheritance/vehicle.ts"],"names":[],"mappings":";;;AAAA;IACY,KAAK,GAAY,EAAE,CAAC;IAE5B,YAAY,KAAY;QACpB,IAAI,CAAC,KAAK,GAAG,KAAK,CAAC;IACvB,CAAC;IAEM,mBAAmB;QACtB,OAAO,CAAC,GAAG,CAAC,+BAA+B,IAAI,CAAC,KAAK,QAAQ,CAAC,CAAC;IACnE,CAAC;CACJ"}

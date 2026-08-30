@@ -1,0 +1,1 @@
+{"version":3,"file":"motorBike.d.ts","sourceRoot":"","sources":["../../src/Inheritance/motorBike.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,OAAO,EAAE,MAAM,WAAW,CAAC;AAEpC,qBAAa,SAAU,SAAQ,OAAO;IAClC,OAAO,CAAC,mBAAmB,CAAgB;IAG3C,YAAY,KAAK,EAAG,MAAM,EAAE,mBAAmB,EAAG,MAAM,EAGvD;IAEM,sBAAsB,IAAG,IAAI,CAEnC;CACJ"}

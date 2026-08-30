@@ -1,0 +1,1 @@
+{"version":3,"file":"BusinessPassenger.js","sourceRoot":"","sources":["../../src/AirPort/BusinessPassenger.ts"],"names":[],"mappings":";;;AAAA,2CAAwC;AAExC,uBAA+B,SAAQ,qBAAS;IAC5C,kCAAkC;IAClC,kCAAkC;IAElC,YAAY,UAAmB,EAAE,IAAa,EAAE,WAAoB;QAChE,KAAK,CAAC,UAAU,EAAE,IAAI,EAAE,WAAW,CAAC,CAAC;IACzC,CAAC;IAEe,WAAW;IAE3B,CAAC;CACJ"}
