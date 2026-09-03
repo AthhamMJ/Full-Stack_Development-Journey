@@ -16,9 +16,13 @@ form.addEventListener("submit", (event) =>{
 function addTask(text){
     const li = document.createElement("li");
     const span = document.createElement("span");
+
     span.textContent = text;
+
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Delete";
+    
+    deleteBtn.style.backgroundColor = "Black"
+    deleteBtn.textContent = "Remove";
 
     li.appendChild(span);
     li.appendChild(deleteBtn);
@@ -35,3 +39,5 @@ list.addEventListener("click", (event) =>{
         clickElement.parentElement.remove();
     }
 })
+
+//maximum potential. time is'nt enough Anna

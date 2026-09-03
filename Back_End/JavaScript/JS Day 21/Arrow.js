@@ -17,3 +17,10 @@ const letter = JSON.stringify(key);
 
 console.log("Your details are", details);
 console.log("Your Whole data has became a string", letter);
+
+
+// const area = ((r) => {
+//     return Math.PI*r*r
+// })
+
+// console.log(area(7));

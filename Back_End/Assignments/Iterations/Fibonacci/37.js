@@ -1,5 +1,5 @@
 function main(){
-    fibonacci(5)
+    fibonacci(5000)
 }
 main();
 
