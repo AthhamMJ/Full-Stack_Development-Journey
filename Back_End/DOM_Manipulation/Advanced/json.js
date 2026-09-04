@@ -60,18 +60,20 @@ reset.addEventListener("click", function() {
 // })
 
 
-function fastestLap(data){
-    let max = data[0];
-    for(let i = 0; i < data; i++){
-        max = 0;
-        if(max < data[i]){
-            max = data[i]
-        }
-        else continue;
-    }
-    p1.textContent = `Fastest Lap : ${max}`
-}
+purple.addEventListener("click", () =>{
+    const times = addPoints(driver.laps)
 
-purple.addEventListener("click",() => {
-    fastestLap(driver.laps);
-});
+    p1.textContent = `Fastest Lap: ${times}`
+})
+
+const addPoints = (times) => {
+    let max = times[0];
+
+    for (let i = 0; i < times.length; i++) {
+        if (max < times[i]) {
+            max = times[i];
+        }
+    }
+
+    return max;
+};
