@@ -8,8 +8,10 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use((req, res, next) => {
-    console.log(`URL Path ${req.path}`);
-    console.log(`Status ${req.headers}`);
+    console.log(`Method: ${req.method}`);
+    console.log(`Headers: ${req.headers}`);
+    console.log(`Path: ${req.path}`)
+    console.log(new Date())
     next();
 })
 
